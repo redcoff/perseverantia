@@ -1,0 +1,701 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.30f1 (1fb1bf06830e) revision 2077119'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Education' Language: 'cs' Physical Memory: 6077 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+C:/Projects/pers/perseverantia/perseverantia
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+57025
+Successfully changed project path to: C:/Projects/pers/perseverantia/perseverantia
+C:/Projects/pers/perseverantia/perseverantia
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 142.77 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.30f1 (1fb1bf06830e)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Projects/pers/perseverantia/perseverantia/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f91)
+    Vendor:   
+    VRAM:     3962 MB
+    Driver:   30.0.15.1278
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56992
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.006800 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 132.11 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.978 seconds
+Domain Reload Profiling:
+	ReloadAssembly (979ms)
+		BeginReloadAssembly (142ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (725ms)
+			LoadAssemblies (140ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (203ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (336ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (132ms)
+				BeforeProcessingInitializeOnLoad (20ms)
+				ProcessInitializeOnLoadAttributes (130ms)
+				ProcessInitializeOnLoadMethodAttributes (43ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.015548 seconds.
+ASSEMBLY OVERRIDES: * override found for Unity assembly UnityEngine.UIElementsModule.dll (override path Library/ScriptAssemblies/UnityEngine.UIElementsModule.dll)
+ASSEMBLY OVERRIDES: * override found for Unity assembly UnityEditor.UIElementsModule.dll (override path Library/ScriptAssemblies/UnityEditor.UIElementsModule.dll)
+Begin MonoManager ReloadAssembly
+ASSEMBLY OVERRIDES: * override found for Unity assembly UnityEngine.UIElementsModule.dll (override path Library/ScriptAssemblies/UnityEngine.UIElementsModule.dll)
+ASSEMBLY OVERRIDES: * override found for Unity assembly UnityEditor.UIElementsModule.dll (override path Library/ScriptAssemblies/UnityEditor.UIElementsModule.dll)
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 148.46 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+ASSEMBLY OVERRIDES: * override found for Unity assembly UnityEngine.UIElementsModule.dll (override path Library/ScriptAssemblies/UnityEngine.UIElementsModule.dll)
+ASSEMBLY OVERRIDES: * override found for Unity assembly UnityEditor.UIElementsModule.dll (override path Library/ScriptAssemblies/UnityEditor.UIElementsModule.dll)
+ASSEMBLY OVERRIDES: * override found for Unity assembly UnityEngine.UIElementsModule.dll (override path Library/ScriptAssemblies/UnityEngine.UIElementsModule.dll)
+ASSEMBLY OVERRIDES: * override found for Unity assembly UnityEditor.UIElementsModule.dll (override path Library/ScriptAssemblies/UnityEditor.UIElementsModule.dll)
+Mono: successfully reloaded assembly
+- Completed reload, in  2.606 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2607ms)
+		BeginReloadAssembly (266ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (2230ms)
+			LoadAssemblies (269ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (629ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (135ms)
+			SetupLoadedEditorAssemblies (996ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (149ms)
+				BeforeProcessingInitializeOnLoad (192ms)
+				ProcessInitializeOnLoadAttributes (475ms)
+				ProcessInitializeOnLoadMethodAttributes (162ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 2.81 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4281 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 250.8 MB.
+System memory in use after: 251.0 MB.
+
+Unloading 112 unused Assets to reduce memory usage. Loaded Objects now: 4639.
+Total: 12.186600 ms (FindLiveObjects: 0.936100 ms CreateObjectMapping: 0.629000 ms MarkObjects: 8.994600 ms  DeleteObjects: 1.621100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/UI/Menu.uxml
+  artifactKey: Guid(4cc3280bc34e86941bc6c3fe3c09b501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Menu.uxml using Guid(4cc3280bc34e86941bc6c3fe3c09b501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '893eb0c6d2a53cc1045bf6106ef8e0e0') in 0.089057 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000515 seconds.
+  path: Assets/UI/Default.asset
+  artifactKey: Guid(eb81ec7868f95b547a34916fe46e43b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Default.asset using Guid(eb81ec7868f95b547a34916fe46e43b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '015951d3dc612310d2091a02deef2d6f') in 0.043671 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 268.407263 seconds.
+  path: Assets/UI/Menu.uxml
+  artifactKey: Guid(4cc3280bc34e86941bc6c3fe3c09b501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Menu.uxml using Guid(4cc3280bc34e86941bc6c3fe3c09b501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '216bbd8c38706b1f3b495697a3501b22') in 0.260506 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.233277 seconds.
+  path: Assets/UI/Fonts
+  artifactKey: Guid(8f52790403cde23418706d87b84e2405) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Fonts using Guid(8f52790403cde23418706d87b84e2405) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67935342aa497f07ca4d710afdc6fe57') in 0.019075 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.851960 seconds.
+  path: Assets/_External/Fonts/Major_Mono_Display
+  artifactKey: Guid(2b93b01db6d883f4a8ab491f1a671f10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_External/Fonts/Major_Mono_Display using Guid(2b93b01db6d883f4a8ab491f1a671f10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3183b261777445754de35e388d9c006') in 0.025384 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.880441 seconds.
+  path: Assets/_External/Fonts/Major_Mono_Display/MajorMonoDisplay-Regular.ttf
+  artifactKey: Guid(cdbc3aeec993f75428712f7dad715f1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_External/Fonts/Major_Mono_Display/MajorMonoDisplay-Regular.ttf using Guid(cdbc3aeec993f75428712f7dad715f1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8eb8126d506ad6bac2aab454d2adfdd8') in 1.562949 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.102846 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/OSX/AppleSDGothicNeo Bold SDF.asset
+  artifactKey: Guid(48b56760c29da4e54bd49bdd0e209a8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/OSX/AppleSDGothicNeo Bold SDF.asset using Guid(48b56760c29da4e54bd49bdd0e209a8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd28fa116867a8f8fa2ecc0312f8ff70f') in 1.265643 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000712 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/Linux/NotoSansCJKsc-Regular SDF.asset
+  artifactKey: Guid(aea3e877bd923425191d767b068f857b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/Linux/NotoSansCJKsc-Regular SDF.asset using Guid(aea3e877bd923425191d767b068f857b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d7bd95b23f988d6b31e9f4f88a8de42') in 0.047002 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000613 seconds.
+  path: Packages/com.unity.ui/PackageResources/Fonts/Inter/Inter-SemiBold SDF.asset
+  artifactKey: Guid(3d9b898673c3142ba81f77f943606174) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/Fonts/Inter/Inter-SemiBold SDF.asset using Guid(3d9b898673c3142ba81f77f943606174) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dc26c9cd5e420d411da6f9bc2d78d30') in 0.044767 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000439 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/OSX/Microsoft Sans Serif SDF.asset
+  artifactKey: Guid(df820eedee7d846adb18ab4ec0e18cf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/OSX/Microsoft Sans Serif SDF.asset using Guid(df820eedee7d846adb18ab4ec0e18cf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d519982b941e0e78d48cb34fb485043') in 0.035929 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000753 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/GlobalFallback/Linux/FreeSans SDF.asset
+  artifactKey: Guid(8d92031a527a7440694352bf728eb372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/GlobalFallback/Linux/FreeSans SDF.asset using Guid(8d92031a527a7440694352bf728eb372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0068145278095df9f1569b12e463c6ea') in 0.034128 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000442 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/GlobalFallback/Linux/DroidSans SDF.asset
+  artifactKey: Guid(76ffb70bc8b064bb78482d56b6d07384) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/GlobalFallback/Linux/DroidSans SDF.asset using Guid(76ffb70bc8b064bb78482d56b6d07384) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29a87e7f4384b38b9511cb9ca1607f41') in 0.037450 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000452 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/ChineseTraditional - Win.asset
+  artifactKey: Guid(2b19d26d119094f1f96fb66447f70386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/ChineseTraditional - Win.asset using Guid(2b19d26d119094f1f96fb66447f70386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bf2e7485601d5f2d76a0bde688595a7') in 0.039212 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000708 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/Windows/Microsoft YaHei UI SDF.asset
+  artifactKey: Guid(3a384cde0145d47abb7b6c2790f51340) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/Windows/Microsoft YaHei UI SDF.asset using Guid(3a384cde0145d47abb7b6c2790f51340) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af06d733a25d65749757dca61b72b334') in 0.041493 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000685 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/Linux/NotoSansCJKjp-Regular SDF.asset
+  artifactKey: Guid(8955d2cd88b5e45b9a51882c44451c67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/Linux/NotoSansCJKjp-Regular SDF.asset using Guid(8955d2cd88b5e45b9a51882c44451c67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c42d03d13abc4b819a7cff4790996b88') in 0.052237 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000551 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/OSX/Hiragino Sans W3 SDF.asset
+  artifactKey: Guid(2eb39e2dc0d8e5246829486aa0a3b34a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/OSX/Hiragino Sans W3 SDF.asset using Guid(2eb39e2dc0d8e5246829486aa0a3b34a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f4ad0b065bb89a7b2d6cd5d34a5abbf') in 0.049486 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000763 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/GlobalFallback/Windows/Microsoft YaHei SDF.asset
+  artifactKey: Guid(51558967ea70d417ca59d79e2aec503a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/GlobalFallback/Windows/Microsoft YaHei SDF.asset using Guid(51558967ea70d417ca59d79e2aec503a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8abce0e132eeefc7d31f038ab4ce095d') in 0.043571 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000505 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/GlobalFallback/OSX/Arial SDF.asset
+  artifactKey: Guid(781f19a15359845a3afc43c44aa167cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/GlobalFallback/OSX/Arial SDF.asset using Guid(781f19a15359845a3afc43c44aa167cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a6956f407cf87cd948dc22091166189') in 0.052060 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000477 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/English - Linux.asset
+  artifactKey: Guid(32f35e5bf2a734e6e8ddbb8afc530348) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/English - Linux.asset using Guid(32f35e5bf2a734e6e8ddbb8afc530348) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c48e329ac1601afb619670ab6220162') in 0.057390 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000395 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/OSX/Hiragino Sans W6 SDF.asset
+  artifactKey: Guid(5e70acf8b314ecb44a3236ab256489ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/OSX/Hiragino Sans W6 SDF.asset using Guid(5e70acf8b314ecb44a3236ab256489ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3b92f2fe4fbde82e672a3f6f3f32454') in 0.045199 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000662 seconds.
+  path: Packages/com.unity.ui/PackageResources/Fonts/Lucida Grande SDF.asset
+  artifactKey: Guid(fe1b8eabc0eac40cb9b3113d56142175) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/Fonts/Lucida Grande SDF.asset using Guid(fe1b8eabc0eac40cb9b3113d56142175) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Shader error in 'Hidden/TextCore/Editor/Distance Field SSD': Couldn't open include file 'TextCore_Properties.cginc'. at line 60
+
+Compiling Vertex program
+Platform defines: SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: SHADER_API_GLES30 UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_NATIVE_SHADOW_LOOKUPS UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_VIRTUAL_TEXTURING
+Shader error in 'Hidden/TextCore/Editor/Distance Field SSD': Couldn't open include file 'TextCore_Properties.cginc'. at line 60
+
+Compiling Vertex program
+Platform defines: SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: SHADER_API_GLES30 UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_NATIVE_SHADOW_LOOKUPS UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_VIRTUAL_TEXTURING
+ -> (artifact id: 'feeac61646f3790303091a3078bcaaa3') in 0.121458 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000572 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/Linux/NotoSansCJKkr-Regular SDF.asset
+  artifactKey: Guid(d53f9cc2cf8c441088a1f259f64789ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/Linux/NotoSansCJKkr-Regular SDF.asset using Guid(d53f9cc2cf8c441088a1f259f64789ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b3002311c8a0577cf27be6865c38396') in 0.048496 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000777 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/Windows/Yu Gothic UI SDF.asset
+  artifactKey: Guid(32c1cfcbd936149a0842b30d69087e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/Windows/Yu Gothic UI SDF.asset using Guid(32c1cfcbd936149a0842b30d69087e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cdf46168606806b53d015c68dc8ac09') in 0.062386 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000919 seconds.
+  path: Packages/com.unity.ui/PackageResources/Fonts/RobotoMono/RobotoMono-Italic SDF.asset
+  artifactKey: Guid(f82d841aab6d7481e857be8cd3794da7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/Fonts/RobotoMono/RobotoMono-Italic SDF.asset using Guid(f82d841aab6d7481e857be8cd3794da7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Shader error in 'Hidden/TextCore/Editor/Distance Field SSD': Couldn't open include file 'TextCore_Properties.cginc'. at line 60
+
+Compiling Vertex program
+Platform defines: SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: SHADER_API_GLES30 UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_NATIVE_SHADOW_LOOKUPS UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_VIRTUAL_TEXTURING
+Shader error in 'Hidden/TextCore/Editor/Distance Field SSD': Couldn't open include file 'TextCore_Properties.cginc'. at line 60
+
+Compiling Vertex program
+Platform defines: SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: SHADER_API_GLES30 UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_NATIVE_SHADOW_LOOKUPS UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_VIRTUAL_TEXTURING
+ -> (artifact id: '60f5dfe92a4d83a39cc525fcdfda81d0') in 0.065543 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000739 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/Windows/Malgun Gothic Bold SDF.asset
+  artifactKey: Guid(1ffdf6bc7fe1545998decbd633c79a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/Windows/Malgun Gothic Bold SDF.asset using Guid(1ffdf6bc7fe1545998decbd633c79a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f33fe6371fecda6b7824e0d6a5d0f87e') in 0.047480 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000828 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/GlobalFallback/GlobalFallback - Win.asset
+  artifactKey: Guid(09a8e73cea07c4b0084b285f8e91187e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/GlobalFallback/GlobalFallback - Win.asset using Guid(09a8e73cea07c4b0084b285f8e91187e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec2878a67662472643916498fb365471') in 0.067564 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000854 seconds.
+  path: Packages/com.unity.ui/PackageResources/Fonts/Lucida Grande Bold SDF.asset
+  artifactKey: Guid(8c141b3b4d8114d5ba66c75fe99280db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/Fonts/Lucida Grande Bold SDF.asset using Guid(8c141b3b4d8114d5ba66c75fe99280db) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Shader error in 'Hidden/TextCore/Editor/Distance Field SSD': Couldn't open include file 'TextCore_Properties.cginc'. at line 60
+
+Compiling Vertex program
+Platform defines: SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: SHADER_API_GLES30 UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_NATIVE_SHADOW_LOOKUPS UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_VIRTUAL_TEXTURING
+Shader error in 'Hidden/TextCore/Editor/Distance Field SSD': Couldn't open include file 'TextCore_Properties.cginc'. at line 60
+
+Compiling Vertex program
+Platform defines: SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: SHADER_API_GLES30 UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_NATIVE_SHADOW_LOOKUPS UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_VIRTUAL_TEXTURING
+ -> (artifact id: 'b3d6357e2ec7ccc1be7cc36b1a1aaedb') in 0.068695 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000621 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/ChineseSimplified - Linux.asset
+  artifactKey: Guid(2731ed7e47d9445eb80aec71e8ff9564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/ChineseSimplified - Linux.asset using Guid(2731ed7e47d9445eb80aec71e8ff9564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bdc95be3b95079027a85ea4c9119b1b') in 0.046038 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001153 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/Linux/NotoSansCJKsc-Bold SDF.asset
+  artifactKey: Guid(f9f0264425dca45439a36325106f5887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/Linux/NotoSansCJKsc-Bold SDF.asset using Guid(f9f0264425dca45439a36325106f5887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c55ad3876e6c10beebaf825525dbc042') in 0.053870 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000891 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/Korean - Win.asset
+  artifactKey: Guid(30f4986d72e6147ce8f62d6086bfe38c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/Korean - Win.asset using Guid(30f4986d72e6147ce8f62d6086bfe38c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '982b078ce43ae73a062cee821ae19b02') in 0.052485 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000842 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/Windows/Microsoft JhengHei Bold SDF.asset
+  artifactKey: Guid(08cf27735ad36462f8aa92586a93d797) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/Windows/Microsoft JhengHei Bold SDF.asset using Guid(08cf27735ad36462f8aa92586a93d797) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e9c3fceacc65a683d3c5ee59b870594') in 0.053228 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000755 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/GlobalFallback/GlobalFallback - OSX.asset
+  artifactKey: Guid(4f54c9837b02f4bada3ef86f566d8c8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/GlobalFallback/GlobalFallback - OSX.asset using Guid(4f54c9837b02f4bada3ef86f566d8c8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3c91ccc6065117da737ef9d85aee6cb') in 0.059858 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000667 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/ChineseSimplified - OSX.asset
+  artifactKey: Guid(1e24344ec61754feea78a37207974c72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/ChineseSimplified - OSX.asset using Guid(1e24344ec61754feea78a37207974c72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28f813dd7ee1f6b3c664e4ef577048c1') in 0.060511 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000719 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/Linux/NotoSansCJKtc-Bold SDF.asset
+  artifactKey: Guid(83719432922344914a8cf6c646c3cb19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/Linux/NotoSansCJKtc-Bold SDF.asset using Guid(83719432922344914a8cf6c646c3cb19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4411b55060ab9704786428902ffe7090') in 0.045925 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000597 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/GlobalFallback/OSX/Helvetica SDF.asset
+  artifactKey: Guid(fa2f773c3e5f145d9900a23b799e7434) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/GlobalFallback/OSX/Helvetica SDF.asset using Guid(fa2f773c3e5f145d9900a23b799e7434) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3303040247291e7dc4c59acca885613b') in 0.038142 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000422 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/GlobalFallback/Windows/MS Gothic SDF.asset
+  artifactKey: Guid(c861b22db069c46fca43a0c35ba88851) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/GlobalFallback/Windows/MS Gothic SDF.asset using Guid(c861b22db069c46fca43a0c35ba88851) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b9dc7b67d133c1d8559ac18becd291b') in 0.043785 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000645 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/ChineseSimplified - Win.asset
+  artifactKey: Guid(13424f9fcfb72460b9b40a1d1adb3d66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/ChineseSimplified - Win.asset using Guid(13424f9fcfb72460b9b40a1d1adb3d66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40f1fd736cf0feb88181af1a84bcc0a1') in 0.041918 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000461 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/OSX/PingFang SC Medium SDF.asset
+  artifactKey: Guid(3e53c72b9c3134b7c94b3b6aa0cf8eb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/OSX/PingFang SC Medium SDF.asset using Guid(3e53c72b9c3134b7c94b3b6aa0cf8eb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5172aabfa0da3fc464c1b02080504c76') in 0.060210 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000864 seconds.
+  path: Packages/com.unity.ui/PackageResources/Fonts/RobotoMono/RobotoMono-Bold SDF.asset
+  artifactKey: Guid(9a4a18829d8274b72b5cfa779c3e90c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/Fonts/RobotoMono/RobotoMono-Bold SDF.asset using Guid(9a4a18829d8274b72b5cfa779c3e90c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Shader error in 'Hidden/TextCore/Editor/Distance Field SSD': Couldn't open include file 'TextCore_Properties.cginc'. at line 60
+
+Compiling Vertex program
+Platform defines: SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: SHADER_API_GLES30 UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_NATIVE_SHADOW_LOOKUPS UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_VIRTUAL_TEXTURING
+Shader error in 'Hidden/TextCore/Editor/Distance Field SSD': Couldn't open include file 'TextCore_Properties.cginc'. at line 60
+
+Compiling Vertex program
+Platform defines: SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: SHADER_API_GLES30 UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_NATIVE_SHADOW_LOOKUPS UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_VIRTUAL_TEXTURING
+ -> (artifact id: 'de368ace689e11b3cb996ad770ea69f6') in 0.077533 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000419 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/Linux/NotoSansCJKtc-Regular SDF.asset
+  artifactKey: Guid(ee6bcb9b5a700448db79cad674b08d7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/Linux/NotoSansCJKtc-Regular SDF.asset using Guid(ee6bcb9b5a700448db79cad674b08d7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f34718e6f51d61e7fc2824e414e24bb') in 0.052983 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000465 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/Korean - Linux.asset
+  artifactKey: Guid(019dcbe0749864fdfbdffa3b6bae3bf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/Korean - Linux.asset using Guid(019dcbe0749864fdfbdffa3b6bae3bf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65d721614268fa4859ffb40ff325afb9') in 0.045911 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000401 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/OSX/AppleSDGothicNeo SDF.asset
+  artifactKey: Guid(7f523978ab02b43afb2236ecd5bfc658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/OSX/AppleSDGothicNeo SDF.asset using Guid(7f523978ab02b43afb2236ecd5bfc658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bc7e8d1e97ab09b626d2bf407e17897') in 0.043910 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000407 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/Japanese - Linux.asset
+  artifactKey: Guid(4e1d0309b3c72490680c584052353fd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/Japanese - Linux.asset using Guid(4e1d0309b3c72490680c584052353fd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf80bec416c36e5121a48ab3a20f62b8') in 0.038929 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000847 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/Windows/Malgun Gothic SDF.asset
+  artifactKey: Guid(ef8d6d41314694a0a83d9fdfd54d70bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/Windows/Malgun Gothic SDF.asset using Guid(ef8d6d41314694a0a83d9fdfd54d70bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '001eadadc8cb897f3c6b75c50338717b') in 0.037555 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000593 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/Japanese - Win.asset
+  artifactKey: Guid(80368c7ab22b64acdb490e60b7877c36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/Japanese - Win.asset using Guid(80368c7ab22b64acdb490e60b7877c36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe5c9c6d622d69bfb5e0d47f27f24e50') in 0.062558 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002274 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/OSX/PingFang TC Medium SDF.asset
+  artifactKey: Guid(7d0daec3d55d04ca2846e8bf3a699de1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/OSX/PingFang TC Medium SDF.asset using Guid(7d0daec3d55d04ca2846e8bf3a699de1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '427e97408b74eb8994bc325f9dd34269') in 0.061168 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000668 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/GlobalFallback/OSX/LastResort SDF.asset
+  artifactKey: Guid(13c3f493fddea4d4982a9b3685a74ca6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/GlobalFallback/OSX/LastResort SDF.asset using Guid(13c3f493fddea4d4982a9b3685a74ca6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f7d919cbd94d234650b5bb62f65f31d') in 0.049649 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000894 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/GlobalFallback/Windows/Gulim SDF.asset
+  artifactKey: Guid(0734e7fe17fe042378fd77e231f1757d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/GlobalFallback/Windows/Gulim SDF.asset using Guid(0734e7fe17fe042378fd77e231f1757d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a813c266da055fbe0b305481d52caef9') in 0.037973 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000769 seconds.
+  path: Packages/com.unity.ui/PackageResources/Fonts/RobotoMono/RobotoMono-BoldItalic SDF.asset
+  artifactKey: Guid(8d4c61e44f18f4c8ab42ac6886559e2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/Fonts/RobotoMono/RobotoMono-BoldItalic SDF.asset using Guid(8d4c61e44f18f4c8ab42ac6886559e2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Shader error in 'Hidden/TextCore/Editor/Distance Field SSD': Couldn't open include file 'TextCore_Properties.cginc'. at line 60
+
+Compiling Vertex program
+Platform defines: SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: SHADER_API_GLES30 UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_NATIVE_SHADOW_LOOKUPS UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_VIRTUAL_TEXTURING
+Shader error in 'Hidden/TextCore/Editor/Distance Field SSD': Couldn't open include file 'TextCore_Properties.cginc'. at line 60
+
+Compiling Vertex program
+Platform defines: SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: SHADER_API_GLES30 UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_NATIVE_SHADOW_LOOKUPS UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_VIRTUAL_TEXTURING
+ -> (artifact id: '17985e27898f114279b246ad43784913') in 0.061094 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000516 seconds.
+  path: Packages/com.unity.ui/PackageResources/Fonts/Inter/Inter-Regular SDF.asset
+  artifactKey: Guid(20e9f1f31c1cc4e6faf54fff6b4b58c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/Fonts/Inter/Inter-Regular SDF.asset using Guid(20e9f1f31c1cc4e6faf54fff6b4b58c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03ea945334cc950b72a0781e06008f2f') in 0.059972 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000535 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/Windows/Microsoft YaHei UI Bold SDF.asset
+  artifactKey: Guid(4d3decb3073504c1a89d04a7b17811d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/Windows/Microsoft YaHei UI Bold SDF.asset using Guid(4d3decb3073504c1a89d04a7b17811d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '053a1bfaf76fe0a409e8d1d1d0ff71f2') in 0.036871 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000670 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/English - Win.asset
+  artifactKey: Guid(336ec9423c4f94bd3839a1d26cf2e9b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/English - Win.asset using Guid(336ec9423c4f94bd3839a1d26cf2e9b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b09a2377f36fa0409fb6e8d852c56bf7') in 0.082905 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000537 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/Linux/NotoSansCJKkr-Bold SDF.asset
+  artifactKey: Guid(e11964531ad4f40aa83d117e496a2fa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/Linux/NotoSansCJKkr-Bold SDF.asset using Guid(e11964531ad4f40aa83d117e496a2fa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8258cf9167e91571fdba1514766a39d') in 0.048599 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001190 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/English - OSX.asset
+  artifactKey: Guid(33d5080fac506427fab325cdba801247) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/English - OSX.asset using Guid(33d5080fac506427fab325cdba801247) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9972e03ff30f18d48572c2f966f385f2') in 0.051615 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000504 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/GlobalFallback/OSX/Arial Unicode SDF.asset
+  artifactKey: Guid(fabfcb320544a4a79bdd9f9f4ff66d76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/GlobalFallback/OSX/Arial Unicode SDF.asset using Guid(fabfcb320544a4a79bdd9f9f4ff66d76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd27de3cc23f13bb0162f11cb11b47d13') in 0.040176 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000976 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/OSX/PingFang SC SDF.asset
+  artifactKey: Guid(f2ec975c8e7c2439395c466152a0ae2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/OSX/PingFang SC SDF.asset using Guid(f2ec975c8e7c2439395c466152a0ae2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b60b6f94164b6b14457f3c9e21d5c0c4') in 0.046965 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000509 seconds.
+  path: Packages/com.unity.ui/PackageResources/Fonts/RobotoMono/RobotoMono-Regular SDF.asset
+  artifactKey: Guid(6271a20c3ec584f5e99d3b1ccdf7fbe4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/Fonts/RobotoMono/RobotoMono-Regular SDF.asset using Guid(6271a20c3ec584f5e99d3b1ccdf7fbe4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Shader error in 'Hidden/TextCore/Editor/Distance Field SSD': Couldn't open include file 'TextCore_Properties.cginc'. at line 60
+
+Compiling Vertex program
+Platform defines: SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: SHADER_API_GLES30 UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_NATIVE_SHADOW_LOOKUPS UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_VIRTUAL_TEXTURING
+Shader error in 'Hidden/TextCore/Editor/Distance Field SSD': Couldn't open include file 'TextCore_Properties.cginc'. at line 60
+
+Compiling Vertex program
+Platform defines: SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: SHADER_API_GLES30 UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_NATIVE_SHADOW_LOOKUPS UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_VIRTUAL_TEXTURING
+ -> (artifact id: '729130b963cc281bfeeb2f06f71ae27e') in 0.072218 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000510 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/Windows/Yu Gothic UI Bold SDF.asset
+  artifactKey: Guid(1e1a0babd63ba404a8e32da1cddfba1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/Windows/Yu Gothic UI Bold SDF.asset using Guid(1e1a0babd63ba404a8e32da1cddfba1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb17cbc28479646b26ce96f1df23af21') in 0.049200 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000673 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/ChineseTraditional - OSX.asset
+  artifactKey: Guid(1a73a5f9aed314e9794b67a4656a808e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/ChineseTraditional - OSX.asset using Guid(1a73a5f9aed314e9794b67a4656a808e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29433c4f2e1bd4430a77efda0600ce6c') in 0.050185 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000607 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/GlobalFallback/GlobalFallback - Linux.asset
+  artifactKey: Guid(37cf56963146a477c895855514811ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/GlobalFallback/GlobalFallback - Linux.asset using Guid(37cf56963146a477c895855514811ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0c1c1c4f928b8ec0b5b6d742c65f90b') in 0.060795 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000399 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/GlobalFallback/Linux/LiberationSans SDF.asset
+  artifactKey: Guid(055a5cb9218924dd0b649868ba0ae52d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/GlobalFallback/Linux/LiberationSans SDF.asset using Guid(055a5cb9218924dd0b649868ba0ae52d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b167b5c332addbce65cf4c912c775fae') in 0.051194 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000439 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/Japanese - OSX.asset
+  artifactKey: Guid(807ced87ff3f549caa8606947adb6e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/Japanese - OSX.asset using Guid(807ced87ff3f549caa8606947adb6e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f0d84c86f8b241bb827a86bc90e26db') in 0.053673 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000607 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/ChineseTraditional - Linux.asset
+  artifactKey: Guid(c02c11f2e2d5b4c6cac55989664976bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/ChineseTraditional - Linux.asset using Guid(c02c11f2e2d5b4c6cac55989664976bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fe3d7ba0aa224bae875f0ec95aa7bb5') in 0.052947 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000970 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/GlobalFallback/Linux/DejavuSans SDF.asset
+  artifactKey: Guid(6648ab03e0b5c4207bc91e9d862abc7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/GlobalFallback/Linux/DejavuSans SDF.asset using Guid(6648ab03e0b5c4207bc91e9d862abc7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '442e91b5dd5d7ac9f2ab6bc97b418e21') in 0.052470 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000631 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/OSX/PingFang TC SDF.asset
+  artifactKey: Guid(c5d9465ad16f943259b8eb587c385edf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/OSX/PingFang TC SDF.asset using Guid(c5d9465ad16f943259b8eb587c385edf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a40b02208d5164213b10e0869ebc338') in 0.047065 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000790 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/Windows/Microsoft JhengHei SDF.asset
+  artifactKey: Guid(89e3ae5dcad4c4f409080adefb11d2b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/Windows/Microsoft JhengHei SDF.asset using Guid(89e3ae5dcad4c4f409080adefb11d2b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85c39d27b3af424fce6c6b71e21e4aa8') in 0.060609 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000424 seconds.
+  path: Packages/com.unity.ui/PackageResources/Fonts/Inter/Inter-Italic SDF.asset
+  artifactKey: Guid(ec9dcbd8e5d994f909f6a186dc09a65f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/Fonts/Inter/Inter-Italic SDF.asset using Guid(ec9dcbd8e5d994f909f6a186dc09a65f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf3f462039a800f1e381135870e259ed') in 0.051757 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000512 seconds.
+  path: Packages/com.unity.ui/PackageResources/Fonts/Inter/Inter-SemiBoldItalic SDF.asset
+  artifactKey: Guid(38491e2e0e663455cbc51fd3da3f356d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/Fonts/Inter/Inter-SemiBoldItalic SDF.asset using Guid(38491e2e0e663455cbc51fd3da3f356d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c59e239734b31853833b5537703bc56') in 0.052844 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001597 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/Linux/NotoSansCJKjp-Bold SDF.asset
+  artifactKey: Guid(cf670e095ad2c441a83c8f65d618e054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/Linux/NotoSansCJKjp-Bold SDF.asset using Guid(cf670e095ad2c441a83c8f65d618e054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbcf0cd4a9be2139218ca9f50219d1cd') in 0.049670 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001311 seconds.
+  path: Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/Korean - OSX.asset
+  artifactKey: Guid(84590dc4411b74e98bd060587fe3f208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/FontAssets/DynamicOSFontAssets/Localization/Korean - OSX.asset using Guid(84590dc4411b74e98bd060587fe3f208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b502aa19a50da2a3697f01cd2a79839') in 0.049501 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.160205 seconds.
+  path: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa909c2aa1301542cb77c13ef6d45c77') in 0.049910 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000922 seconds.
+  path: Assets/UI Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss
+  artifactKey: Guid(a9f42a5c368570b48b84a23941acdec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss using Guid(a9f42a5c368570b48b84a23941acdec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9551798be3bc75eed59e093bd8c41bf2') in 0.307864 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.079708 seconds.
+  path: Assets/UI/Menu.uxml
+  artifactKey: Guid(4cc3280bc34e86941bc6c3fe3c09b501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Menu.uxml using Guid(4cc3280bc34e86941bc6c3fe3c09b501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9667ae5780a7b826eab78860ef11e1b') in 0.008785 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.392874 seconds.
+  path: Packages/com.unity.ui/PackageResources/Fonts/Inter/Inter-Italic SDF.asset
+  artifactKey: Guid(ec9dcbd8e5d994f909f6a186dc09a65f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/Fonts/Inter/Inter-Italic SDF.asset using Guid(ec9dcbd8e5d994f909f6a186dc09a65f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7823b2c0a2d5126cb7ca8585663157c8') in 0.096643 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000482 seconds.
+  path: Packages/com.unity.ui/PackageResources/Fonts/Inter/Inter-SemiBold SDF.asset
+  artifactKey: Guid(3d9b898673c3142ba81f77f943606174) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/Fonts/Inter/Inter-SemiBold SDF.asset using Guid(3d9b898673c3142ba81f77f943606174) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a9b1de0b83870d8b7061d27319859bd') in 0.074873 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000422 seconds.
+  path: Assets/_External/Fonts/Major_Mono_Display/MajorMonoDisplay-Regular SDF.asset
+  artifactKey: Guid(ec2d9593989989d4581521ccc4086146) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_External/Fonts/Major_Mono_Display/MajorMonoDisplay-Regular SDF.asset using Guid(ec2d9593989989d4581521ccc4086146) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '935ebc74bfe983f259d13a0d9c7ac7ca') in 0.066725 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000625 seconds.
+  path: Packages/com.unity.ui/PackageResources/Fonts/Inter/Inter-Regular SDF.asset
+  artifactKey: Guid(20e9f1f31c1cc4e6faf54fff6b4b58c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/Fonts/Inter/Inter-Regular SDF.asset using Guid(20e9f1f31c1cc4e6faf54fff6b4b58c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90224472a8867878b4974284eb207c9f') in 0.136575 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 330.207027 seconds.
+  path: Assets/UI/Menu.uxml
+  artifactKey: Guid(4cc3280bc34e86941bc6c3fe3c09b501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Menu.uxml using Guid(4cc3280bc34e86941bc6c3fe3c09b501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46e69c2b3a6a86fdec372be0fa32d915') in 0.037664 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.150030 seconds.
+  path: Assets/UI/Menu.uxml
+  artifactKey: Guid(4cc3280bc34e86941bc6c3fe3c09b501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Menu.uxml using Guid(4cc3280bc34e86941bc6c3fe3c09b501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6679ed8e1d24802f73491260016e301') in 0.033608 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 506.641615 seconds.
+  path: Packages/com.unity.ui/PackageResources/Fonts/Inter/Inter-SemiBold SDF.asset
+  artifactKey: Guid(3d9b898673c3142ba81f77f943606174) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.ui/PackageResources/Fonts/Inter/Inter-SemiBold SDF.asset using Guid(3d9b898673c3142ba81f77f943606174) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c3044ce915b06b869cad657b918393d') in 0.173347 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000493 seconds.
+  path: Assets/_External/Fonts/Major_Mono_Display/MajorMonoDisplay-Regular SDF.asset
+  artifactKey: Guid(ec2d9593989989d4581521ccc4086146) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_External/Fonts/Major_Mono_Display/MajorMonoDisplay-Regular SDF.asset using Guid(ec2d9593989989d4581521ccc4086146) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9347b505bde5ceae226da09cebf21658') in 0.088997 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 136.610643 seconds.
+  path: Assets/UI/Menu.uxml
+  artifactKey: Guid(4cc3280bc34e86941bc6c3fe3c09b501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Menu.uxml using Guid(4cc3280bc34e86941bc6c3fe3c09b501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26549e797bd38dc7c97a0b5689fc39a4') in 0.044968 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 242.071854 seconds.
+  path: Assets/UI/Menu.uxml
+  artifactKey: Guid(4cc3280bc34e86941bc6c3fe3c09b501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Menu.uxml using Guid(4cc3280bc34e86941bc6c3fe3c09b501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f57a2c43237350fe9fa98be91efb26a9') in 0.067952 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

@@ -4935,6 +4935,7 @@ MonoBehaviour:
   aim: {fileID: 3955593931578217371}
   projectileParticles: {fileID: 7357422928857768761}
   range: 15
+  isAOE: 0
 --- !u!114 &718308661441554093
 MonoBehaviour:
   m_ObjectHideFlags: 0
