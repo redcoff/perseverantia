@@ -9,6 +9,9 @@ public class TargetLocator : MonoBehaviour
     [SerializeField] private Transform aim;
     [SerializeField] private ParticleSystem projectileParticles;
     [SerializeField] private float range = 15;
+    [SerializeField] private bool isAOE = false;
+
+    private bool onCooldown = false;
 
     void Update()
     {
@@ -39,15 +42,22 @@ public class TargetLocator : MonoBehaviour
     void Aim()
     {
         var targetDistance = Vector3.Distance(transform.position, target.position);
+
+        if (!isAOE)
+        {
+            aim.LookAt(target);
+        }
         
-        aim.LookAt(target);
-        
-        Attack(targetDistance < range);
+        Attack(targetDistance < range && !onCooldown);
     }
 
     void Attack(bool isActive)
     {
         var emissionModule = projectileParticles.emission;
         emissionModule.enabled = isActive;
+        projectileParticles.Play();
+
+        //StartCoroutine(CooldownCoruntine());
     }
+    
 }

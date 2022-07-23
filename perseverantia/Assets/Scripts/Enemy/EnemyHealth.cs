@@ -28,6 +28,7 @@ public class EnemyHealth : MonoBehaviour
 
     private void Hit()
     {
+        Debug.Log("au");
         _currentHitPoints--;
         if (_currentHitPoints <= 0)
         {
