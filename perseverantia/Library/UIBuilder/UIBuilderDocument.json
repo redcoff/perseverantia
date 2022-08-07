@@ -5,7 +5,7 @@
         "m_Name": "BuilderDocument",
         "m_EditorClassIdentifier": "",
         "m_CurrentCanvasTheme": 0,
-        "m_CurrentCanvasThemeStyleSheet": {
+        "m_CurrentCanvasThemeStyleSheetReference": {
             "instanceID": 0
         },
         "m_CodePreviewVisible": true,
@@ -15,47 +15,47 @@
                     {
                         "m_StyleSheet": {
                             "fileID": 7433441132597879392,
-                            "guid": "fde69148469abc740b463695af97fad0",
+                            "guid": "b0d82a00bbca10145a57f8f3d341c768",
                             "type": 3
                         },
                         "m_BackupStyleSheet": {
                             "instanceID": 0
                         },
-                        "m_OldPath": "Assets/UI/Styles/MenuStyles.uss"
+                        "m_OldPath": "Assets/UI/Game/Styles/GameStyles.uss"
                     }
                 ],
                 "m_VisualTreeAssetBackup": {
                     "instanceID": 0
                 },
-                "m_OpenendVisualTreeAssetOldPath": "Assets/UI/Menu.uxml",
+                "m_OpenendVisualTreeAssetOldPath": "Assets/UI/Game/Game.uxml",
                 "m_VisualTreeAsset": {
                     "fileID": 9197481963319205126,
-                    "guid": "4cc3280bc34e86941bc6c3fe3c09b501",
+                    "guid": "e7d6003df9b02fb45aa953836a999209",
                     "type": 3
                 },
                 "m_ActiveStyleSheet": {
                     "fileID": 7433441132597879392,
-                    "guid": "fde69148469abc740b463695af97fad0",
+                    "guid": "b0d82a00bbca10145a57f8f3d341c768",
                     "type": 3
                 },
                 "m_Settings": {
-                    "UxmlGuid": "4cc3280bc34e86941bc6c3fe3c09b501",
-                    "UxmlPath": "Assets/UI/Menu.uxml",
+                    "UxmlGuid": "e7d6003df9b02fb45aa953836a999209",
+                    "UxmlPath": "Assets/UI/Game/Game.uxml",
                     "CanvasX": 0,
                     "CanvasY": 0,
-                    "CanvasWidth": 852,
-                    "CanvasHeight": 479,
+                    "CanvasWidth": 705,
+                    "CanvasHeight": 397,
                     "MatchGameView": true,
-                    "ZoomScale": 1.0,
+                    "ZoomScale": 1.5,
                     "PanOffset": {
-                        "x": 166.0,
-                        "y": 157.0
+                        "x": 71.41427612304688,
+                        "y": 112.79995727539063
                     },
                     "ColorModeBackgroundOpacity": 1.0,
                     "ImageModeCanvasBackgroundOpacity": 1.0,
                     "CameraModeCanvasBackgroundOpacity": 1.0,
-                    "EnableCanvasBackground": false,
-                    "CanvasBackgroundMode": 0,
+                    "EnableCanvasBackground": true,
+                    "CanvasBackgroundMode": 2,
                     "CanvasBackgroundColor": {
                         "r": 0.0,
                         "g": 0.0,
@@ -66,7 +66,7 @@
                         "instanceID": 0
                     },
                     "CanvasBackgroundImageScaleMode": 1,
-                    "CanvasBackgroundCameraName": ""
+                    "CanvasBackgroundCameraName": "Main Camera"
                 },
                 "m_OpenSubDocumentParentIndex": -1,
                 "m_OpenSubDocumentParentSourceTemplateAssetIndex": -1

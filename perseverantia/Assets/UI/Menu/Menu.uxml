@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Styles/MenuStyles.uss?fileID=7433441132597879392&amp;guid=fde69148469abc740b463695af97fad0&amp;type=3#MenuStyles" />
+    <ui:VisualElement name="Menu" style="flex-grow: 1; flex-direction: row;">
+        <ui:VisualElement name="LeftSection" style="width: 45%; height: 100%; margin-left: 50px; background-color: rgba(0, 0, 0, 0.35); flex-grow: 0;">
+            <ui:Label text="perseverantia" display-tooltip-when-elided="true" name="GameName" style="-unity-font: url(&apos;project://database/Assets/_External/Fonts/Major_Mono_Display/MajorMonoDisplay-Regular.ttf?fileID=12800000&amp;guid=cdbc3aeec993f75428712f7dad715f1f&amp;type=3#MajorMonoDisplay-Regular&apos;); -unity-font-definition: url(&apos;project://database/Assets/_External/Fonts/Major_Mono_Display/MajorMonoDisplay-Regular%20SDF.asset?fileID=11400000&amp;guid=ec2d9593989989d4581521ccc4086146&amp;type=2#MajorMonoDisplay-Regular SDF&apos;); font-size: 35%; -unity-text-align: upper-center; padding-top: 0; margin-top: 10%; -unity-font-style: bold; color: rgba(255, 255, 255, 255);" />
+            <ui:VisualElement name="Buttons" style="-unity-text-align: middle-center; justify-content: center; flex-grow: 1; padding-bottom: 40%; -unity-font-definition: none; flex-shrink: 1; width: auto; align-items: center;">
+                <ui:Button text="play" display-tooltip-when-elided="true" name="PlayButton" class="menu-button" style="min-width: auto; min-height: auto; height: auto; justify-content: center; -unity-text-align: upper-center;" />
+                <ui:Button text="settings" display-tooltip-when-elided="true" name="SettingsButton" class="menu-button" />
+                <ui:Button text="exit" display-tooltip-when-elided="true" name="ExitButton" class="menu-button" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="RightSection" style="flex-grow: 1; align-items: flex-end; justify-content: flex-end; padding-bottom: 2%;">
+            <ui:Button text="&lt;mute icon&gt;" display-tooltip-when-elided="true" name="MuteButton" class="menu-button" style="align-items: auto; justify-content: flex-start;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

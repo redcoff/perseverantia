@@ -1,0 +1,2 @@
+C:\Projects\pers\perseverantia\perseverantia\obj\Debug\Assembly-CSharp.csproj.AssemblyReference.cache
+C:\Projects\pers\perseverantia\perseverantia\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache

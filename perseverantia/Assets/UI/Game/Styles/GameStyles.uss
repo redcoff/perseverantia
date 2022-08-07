@@ -1,0 +1,5 @@
+.game-label {
+    color: rgba(255, 255, 255, 255);
+    -unity-text-align: upper-left;
+    margin-top: 0.2%;
+}

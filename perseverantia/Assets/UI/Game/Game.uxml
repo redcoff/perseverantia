@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Game/Styles/GameStyles.uss?fileID=7433441132597879392&amp;guid=b0d82a00bbca10145a57f8f3d341c768&amp;type=3#GameStyles" />
+    <ui:VisualElement name="PlayerInfo" style="flex-direction: column; margin-left: 2%; margin-top: 2%;">
+        <ui:VisualElement name="SanityContainer" style="white-space: nowrap; flex-direction: row;">
+            <ui:Label text="Sanity:" display-tooltip-when-elided="true" name="SanityName" class="game-label" style="margin-right: 0;" />
+            <ui:Label text="100%" display-tooltip-when-elided="true" name="SanityValue" class="game-label" />
+        </ui:VisualElement>
+        <ui:VisualElement name="HappinessContainer" style="white-space: nowrap; flex-direction: row;">
+            <ui:Label text="Happiness:" display-tooltip-when-elided="true" name="HappinessName" class="game-label" />
+            <ui:Label text="12" display-tooltip-when-elided="true" name="HappinessValue" class="game-label" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="Towers" style="justify-content: center; min-width: auto; min-height: auto; bottom: auto; top: 82%; flex-direction: row;">
+        <ui:Button text="1" display-tooltip-when-elided="true" name="SmallLamp" style="width: 5%;" />
+        <ui:Button text="2" display-tooltip-when-elided="true" name="Lamp" style="width: 5%;" />
+        <ui:Button text="3" display-tooltip-when-elided="true" name="Obelisk" style="width: 5%;" />
+    </ui:VisualElement>
+</ui:UXML>

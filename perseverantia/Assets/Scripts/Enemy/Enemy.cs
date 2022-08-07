@@ -10,6 +10,7 @@ public class Enemy : MonoBehaviour
 
     private Bank _bank;
     
+    
     void Start()
     {
         _bank = FindObjectOfType<Bank>();    
