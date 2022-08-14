@@ -1,0 +1,7 @@
+.endGameButton {
+}
+
+.endGameButton:hover {
+    color: rgba(255, 255, 255, 255);
+    -unity-background-image-tint-color: rgba(0, 0, 0, 255);
+}

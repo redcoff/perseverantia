@@ -1,0 +1,30 @@
+{
+    "UxmlGuid": "e4551d0d079c43d4da02aef5c3f32dbf",
+    "UxmlPath": "Assets/UI/Game/GameOver.uxml",
+    "CanvasX": 0,
+    "CanvasY": 0,
+    "CanvasWidth": 544,
+    "CanvasHeight": 306,
+    "MatchGameView": true,
+    "ZoomScale": 1.75,
+    "PanOffset": {
+        "x": 134.69989013671876,
+        "y": 203.199951171875
+    },
+    "ColorModeBackgroundOpacity": 1.0,
+    "ImageModeCanvasBackgroundOpacity": 1.0,
+    "CameraModeCanvasBackgroundOpacity": 1.0,
+    "EnableCanvasBackground": true,
+    "CanvasBackgroundMode": 2,
+    "CanvasBackgroundColor": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 255.0
+    },
+    "CanvasBackgroundImage": {
+        "instanceID": 0
+    },
+    "CanvasBackgroundImageScaleMode": 1,
+    "CanvasBackgroundCameraName": "Main Camera"
+}

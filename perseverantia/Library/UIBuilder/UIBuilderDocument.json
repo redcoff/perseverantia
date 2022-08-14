@@ -11,51 +11,37 @@
         "m_CodePreviewVisible": true,
         "m_OpenUXMLFiles": [
             {
-                "m_OpenUSSFiles": [
-                    {
-                        "m_StyleSheet": {
-                            "fileID": 7433441132597879392,
-                            "guid": "b0d82a00bbca10145a57f8f3d341c768",
-                            "type": 3
-                        },
-                        "m_BackupStyleSheet": {
-                            "instanceID": 0
-                        },
-                        "m_OldPath": "Assets/UI/Game/Styles/GameStyles.uss"
-                    }
-                ],
+                "m_OpenUSSFiles": [],
                 "m_VisualTreeAssetBackup": {
                     "instanceID": 0
                 },
-                "m_OpenendVisualTreeAssetOldPath": "Assets/UI/Game/Game.uxml",
+                "m_OpenendVisualTreeAssetOldPath": "Assets/Editor/Extension/EnemyLevelWindow.uxml",
                 "m_VisualTreeAsset": {
                     "fileID": 9197481963319205126,
-                    "guid": "e7d6003df9b02fb45aa953836a999209",
+                    "guid": "e604e1ff8b3c4c44aaba83d66049ea91",
                     "type": 3
                 },
                 "m_ActiveStyleSheet": {
-                    "fileID": 7433441132597879392,
-                    "guid": "b0d82a00bbca10145a57f8f3d341c768",
-                    "type": 3
+                    "instanceID": 0
                 },
                 "m_Settings": {
-                    "UxmlGuid": "e7d6003df9b02fb45aa953836a999209",
-                    "UxmlPath": "Assets/UI/Game/Game.uxml",
+                    "UxmlGuid": "e604e1ff8b3c4c44aaba83d66049ea91",
+                    "UxmlPath": "Assets/Editor/Extension/EnemyLevelWindow.uxml",
                     "CanvasX": 0,
                     "CanvasY": 0,
-                    "CanvasWidth": 705,
-                    "CanvasHeight": 397,
-                    "MatchGameView": true,
-                    "ZoomScale": 1.5,
+                    "CanvasWidth": 350,
+                    "CanvasHeight": 450,
+                    "MatchGameView": false,
+                    "ZoomScale": 1.0,
                     "PanOffset": {
-                        "x": 71.41427612304688,
-                        "y": 112.79995727539063
+                        "x": 20.0,
+                        "y": 20.0
                     },
                     "ColorModeBackgroundOpacity": 1.0,
                     "ImageModeCanvasBackgroundOpacity": 1.0,
                     "CameraModeCanvasBackgroundOpacity": 1.0,
-                    "EnableCanvasBackground": true,
-                    "CanvasBackgroundMode": 2,
+                    "EnableCanvasBackground": false,
+                    "CanvasBackgroundMode": 0,
                     "CanvasBackgroundColor": {
                         "r": 0.0,
                         "g": 0.0,
@@ -66,7 +52,7 @@
                         "instanceID": 0
                     },
                     "CanvasBackgroundImageScaleMode": 1,
-                    "CanvasBackgroundCameraName": "Main Camera"
+                    "CanvasBackgroundCameraName": ""
                 },
                 "m_OpenSubDocumentParentIndex": -1,
                 "m_OpenSubDocumentParentSourceTemplateAssetIndex": -1

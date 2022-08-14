@@ -3,37 +3,44 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ObjectPool : MonoBehaviour
 {
     [SerializeField] private GameObject objectPrefab;
     [SerializeField] private float spawnTimer = 1f;
-    [SerializeField] private int maxSpawns = 10;
-    
-    private float currentSpawned = 0f;
 
+    public int MaximumSpawns = 10;
+
+    private float currentSpawned = 0f;
     private GameObject[] pool;
 
-    private void Awake()
-    {
-        FillPool();
-    }
+    UnityEvent EndEvent;
 
     void Start()
     {
+        if (EndEvent == null)
+            EndEvent = new UnityEvent();
+
+        EndEvent.AddListener(Finish);
+    }
+
+    public void Run()
+    {
+        FillPool();
         StartCoroutine(SpawnObject());
     }
 
     void FillPool()
     {
-        pool = new GameObject[maxSpawns];
+        pool = new GameObject[MaximumSpawns];
 
         for (var i = 0; i < pool.Length; i++)
         {
             pool[i] = Instantiate(objectPrefab, transform);
             pool[i].SetActive(false);
         }
-        
+
     }
 
     void EnableObjectInPool()
@@ -43,6 +50,7 @@ public class ObjectPool : MonoBehaviour
             if (!pool[i].activeInHierarchy)
             {
                 pool[i].SetActive(true);
+                currentSpawned++;
                 return;
             }
         }
@@ -50,11 +58,16 @@ public class ObjectPool : MonoBehaviour
 
     IEnumerator SpawnObject()
     {
-        while (true)
+        while (currentSpawned < MaximumSpawns)
         {
             EnableObjectInPool();
             yield return new WaitForSeconds(spawnTimer);
         }
+    }
+
+    private void Finish()
+    {
+        
     }
 
 }

@@ -1,19 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using JetBrains.Annotations;
+using Player;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
     [SerializeField] private int currencyReward = 20;
-    [SerializeField] private int penalty = 5; //TODO: hit player HP
+    [SerializeField] private int penalty = 5;
 
     private Bank _bank;
+    private Sanity _playerSanity;
     
     
     void Start()
     {
         _bank = FindObjectOfType<Bank>();    
+        _playerSanity = FindObjectOfType<Sanity>();    
     }
 
     public void RewardCurrency()
@@ -29,7 +32,7 @@ public class Enemy : MonoBehaviour
 
     public void HitPlayer()
     {
-        //TODO: hit player HP
+        _playerSanity.TakeSanity(penalty);
     }
 
 }
