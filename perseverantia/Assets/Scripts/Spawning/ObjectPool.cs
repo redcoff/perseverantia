@@ -37,10 +37,9 @@ public class ObjectPool : MonoBehaviour
 
     public void AddDespawned()
     {
-        Debug.Log("Despawned: " + currentDespawned);
         currentDespawned++;
 
-        if (currentDespawned != 0 && currentSpawned != 0 && currentDespawned == currentSpawned)
+        if (currentDespawned != 0 && currentSpawned != 0 && currentDespawned == currentSpawned && currentSpawned == MaximumSpawns)
         {
             Finish();
         }

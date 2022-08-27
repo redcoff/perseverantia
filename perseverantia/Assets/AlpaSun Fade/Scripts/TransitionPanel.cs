@@ -8,12 +8,13 @@ namespace AlpaSunFade
 		[Header("Properties")]
 		[SerializeField] private Color transitionColor;
 		[SerializeField] private PanelSettings settings;
+		[SerializeField] private UIDocument _doc;
 
 		private VisualElement _transitionPanel;
 
 		private void OnEnable()
 		{
-			_transitionPanel = GetComponent<UIDocument>().rootVisualElement.Q("Container");
+			_transitionPanel = _doc.rootVisualElement.Q("Container");
 
 			_transitionPanel.style.opacity = 0;
 

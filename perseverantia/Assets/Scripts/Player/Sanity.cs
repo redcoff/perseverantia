@@ -4,7 +4,7 @@ namespace Player
 {
     public class Sanity : MonoBehaviour
     {
-        [SerializeField] private int startingSanity = 100;
+        private LevelSettings _levelSettings;
         
         private int currentSanity = 0;
         private GameUIController _gameUIController; 
@@ -13,7 +13,8 @@ namespace Player
         
         private void Awake()
         {
-            currentSanity = startingSanity;
+            _levelSettings = FindObjectOfType<LevelSettings>();
+            currentSanity = _levelSettings.StartingSanity;
             _gameUIController = FindObjectOfType<GameUIController>(); 
         }
 

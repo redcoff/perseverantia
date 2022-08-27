@@ -43,6 +43,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Game\LevelSettings.cs" />
      <Compile Include="Assets\Scripts\Map\CoordLabel.cs" />
+     <Compile Include="Assets\Scripts\Game\GameSettings.cs" />
      <Compile Include="Assets\_External\DOTween\Modules\DOTweenModuleEPOOutline.cs" />
      <Compile Include="Assets\_External\DOTween\Modules\DOTweenModuleAudio.cs" />
      <Compile Include="Assets\Scripts\Player\Bank.cs" />
@@ -59,16 +60,14 @@
      <Compile Include="Assets\_External\DOTween\Modules\DOTweenModuleSprite.cs" />
      <Compile Include="Assets\Scripts\Enemy\EnemyMovement.cs" />
      <Compile Include="Assets\Scripts\Map\Waypoint.cs" />
-     <Compile Include="Assets\Scripts\UI\Game\GameController.cs" />
      <Compile Include="Assets\Scripts\Player\Sanity.cs" />
      <Compile Include="Assets\_External\DOTween\Modules\DOTweenModulePhysics2D.cs" />
      <Compile Include="Assets\AlpaSun Fade\Scripts\InputSystem.cs" />
      <Compile Include="Assets\_External\DOTween\Modules\DOTweenModulePhysics.cs" />
      <Compile Include="Assets\Scripts\Tower\Tower.cs" />
+     <Compile Include="Assets\Scripts\Tower\Combat\TowerAttackSoundPlayer.cs" />
      <Compile Include="Assets\AlpaSun Fade\Scripts\TransitionPanel.cs" />
      <Compile Include="Assets\Scripts\Tower\Combat\TargetLocator.cs" />
-     <Compile Include="Assets\Scripts\Tower\Combat\TowerAttackSoundPlayer.cs" />
-     <Compile Include="Assets\Scripts\Game\GameSettings.cs" />
      <None Include="Assets\_External\Sprites\Tower Defense assets\Spritesheet\towers_red_sheet.xml" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
@@ -103,6 +102,7 @@
      <None Include="Assets\UI\Transition.uxml" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
      <None Include="Assets\AlpaSun Fade\UI Toolkit\Layouts\ControlDisplay.uxml" />
+     <None Include="Assets\settings.json" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
      <None Include="Assets\UI\Menu\Styles\MenuStyles.uss" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
@@ -355,28 +355,28 @@
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.6f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst.Unsafe">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.Unsafe.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.Unsafe.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst.Cecil.Mdb">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.Mdb.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.Mdb.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst.Cecil.Pdb">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst.Cecil">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst.Cecil.Rocks">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll</HintPath>
      </Reference>
      <Reference Include="DOTween">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Assets\_External\DOTween\DOTween.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Assets\_External\DOTween\DOTween.dll</HintPath>
      </Reference>
      <Reference Include="ReportGeneratorMerged">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\PackageCache\com.unity.testtools.codecoverage@1.0.1\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\PackageCache\com.unity.testtools.codecoverage@1.0.1\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
      </Reference>
      <Reference Include="Newtonsoft.Json">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
      </Reference>
      <Reference Include="netstandard">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.6f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
@@ -745,139 +745,139 @@
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.6f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
      </Reference>
      <Reference Include="Unity.InternalAPIEngineBridge.001">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VSCode.Editor">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.Universal.Shaders">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TextMeshPro.Editor">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Searcher.Editor">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.Path.Editor">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.UI">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
      </Reference>
      <Reference Include="Unity.InputSystem">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Rider.Editor">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.UI">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
      </Reference>
      <Reference Include="Unity.EditorCoroutines.Editor">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.ShaderGraph.Editor">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Mathematics.Editor">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.Common.Editor">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualEffectGraph.Editor">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.VisualEffectGraph.Editor.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.VisualEffectGraph.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.Tilemap.Editor">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.Universal.Runtime">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="PPv2URPConverters">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\ScriptAssemblies\PPv2URPConverters.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\ScriptAssemblies\PPv2URPConverters.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualStudio.Editor">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualEffectGraph.Runtime">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.VisualEffectGraph.Runtime.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.VisualEffectGraph.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Timeline">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TextMeshPro">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst.Editor">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.Sprite.Editor">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.InternalAPIEditorBridge.001">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.Core.Runtime">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="Unity.PlasticSCM.Editor">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Services.Core">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Mathematics">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Services.Core.Analytics">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.Universal.Editor">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Services.Core.Environments">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.Services.Core.Environments.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.Services.Core.Environments.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Timeline.Editor">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.Common.Runtime">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.SpriteShape.Editor">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TestTools.CodeCoverage.Editor">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.Core.Editor">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.SpriteShape.Runtime">
-     <HintPath>C:\Projects\fckinhell\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
+     <HintPath>W:\School\ncgd008\final\perseverantia\perseverantia\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
      </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -6,9 +6,22 @@ using UnityEngine;
 [Serializable]
 public class GameSettings
 {
-    [SerializeField]
-    public Dictionary<string, List<int>> EnemiesSetUpPerLevel = new Dictionary<string, List<int>>();
+    public GameSetting[] settings;
 
     public GameSettings() { }
 
+}
+
+[Serializable]
+public class GameSetting
+{
+    public string LevelName;
+    public int[] EnemiesSetUpPerLevel;
+
+    public GameSetting(string name, int[] enemies)
+    {
+        LevelName = name;
+        EnemiesSetUpPerLevel = enemies;
+    }
+    
 }

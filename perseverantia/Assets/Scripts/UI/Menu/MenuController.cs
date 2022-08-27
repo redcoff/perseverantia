@@ -54,8 +54,6 @@ public class MenuController : MonoBehaviour
         soundsSlider.RegisterValueChangedCallback(v =>
         {
             AudioListener.volume = v.newValue / 100;
-            Debug.Log("AudioListener.volume: " + AudioListener.volume);
-            Debug.Log("v.newValue: " + v.newValue);
         });
     }
     

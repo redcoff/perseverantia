@@ -19,11 +19,14 @@ public class EnemyLevelWindow : EditorWindow
     private int _enemiesFirstRound;
     private bool _customizable = false;
     private string _currentLevelName;
+    private int _currentLevelIndex;
 
     private LevelSettings _levelSettings;
     private GameSettings _gameSettings;
 
-    private string _gameSettingsPath = Path.Combine(Application.persistentDataPath, "settings.json");
+    private string _gameSettingsPath = "";
+
+    private bool AreDataAlreadyLoaded = false;
 
     [SerializeField] List<int> Rounds = new();
 
@@ -37,6 +40,8 @@ public class EnemyLevelWindow : EditorWindow
     {
         _defaultLabelColor = GUI.contentColor;
         _currentLevelName = SceneManager.GetActiveScene().name;
+        _currentLevelIndex = SceneManager.GetActiveScene().buildIndex;
+        _gameSettingsPath = Path.Combine(Application.dataPath, "settings.json");
 
         //GUILayout.BeginHorizontal();
         GUILayout.Label("Current level", EditorStyles.boldLabel);
@@ -49,6 +54,7 @@ public class EnemyLevelWindow : EditorWindow
 
         SaveSettings();
     }
+
 
     private void FindSettings()
     {
@@ -69,12 +75,16 @@ public class EnemyLevelWindow : EditorWindow
         _enemyObjectPool = pool;
         _levelSettings = levelSettings;
 
-        LoadSavedGameSettings();
+        if (!AreDataAlreadyLoaded)
+        {
+            LoadSavedGameSettings();
+        }
     }
+    
 
     private void LoadSavedGameSettings()
     {
-        var settings = new GameSettings();
+        GameSettings settings = null;
         if (File.Exists(_gameSettingsPath))
         {
             var settingsContent = File.ReadAllText(_gameSettingsPath);
@@ -90,18 +100,36 @@ public class EnemyLevelWindow : EditorWindow
         else
         {
             _gameSettings = new GameSettings();
+            _gameSettings.settings = new GameSetting[10];
         }
+
+        AreDataAlreadyLoaded = true;
     }
 
     private void SetLocalSettings(GameSettings settings)
     {
-        if (settings?.EnemiesSetUpPerLevel is null) return;
+        var settingsForCurrentLevel = new GameSetting(_currentLevelName, Rounds.ToArray());
+        
+        if (settings is null) return;
+        var innerSettings = settings.settings.ToList();
 
-        settings.EnemiesSetUpPerLevel.TryGetValue(_currentLevelName, out var levelRounds);
-        if (levelRounds is not null)
+        if (innerSettings.Any(s => s.LevelName.Equals(_currentLevelName)))
         {
-            _totalRounds = levelRounds.Count;
-            _enemiesFirstRound = levelRounds[0];
+            settingsForCurrentLevel =
+                innerSettings.Find(obj => obj.LevelName.Equals(_currentLevelName));
+        }
+
+        if (settingsForCurrentLevel is not null)
+        {
+            var currentEnemyList = settingsForCurrentLevel.EnemiesSetUpPerLevel.ToList();
+            _totalRounds = currentEnemyList.Count;
+            _enemiesFirstRound = currentEnemyList[0];
+
+            if (_levelSettings is not null)
+            {
+                _levelSettings.TotalRounds = _totalRounds;
+                _levelSettings.EnemiesRounds = Rounds;
+            }
         }
     }
 
@@ -147,28 +175,22 @@ public class EnemyLevelWindow : EditorWindow
 
         if (GUILayout.Button("Save"))
         {
-            if (_gameSettings.EnemiesSetUpPerLevel.ContainsKey(_currentLevelName))
+            var innerSettings = _gameSettings.settings.ToList();
+            
+            if (innerSettings.Any(obj => obj is not null && obj.LevelName.Equals(_currentLevelName)))
             {
-                _gameSettings.EnemiesSetUpPerLevel[_currentLevelName] = Rounds;
+                var currentSettings = innerSettings.Find(obj => obj.LevelName.Equals(_currentLevelName));
+                currentSettings.EnemiesSetUpPerLevel = Rounds.ToArray();
             }
             else
             {
-                _gameSettings.EnemiesSetUpPerLevel.TryAdd(_currentLevelName, Rounds);
+                _gameSettings.settings[_currentLevelIndex] = new GameSetting(_currentLevelName, Rounds.ToArray());
             }
-
-            _gameSettings.EnemiesSetUpPerLevel.TryGetValue(_currentLevelName, out var levelRounds);
-            if (levelRounds is not null)
-            {
-                _levelSettings.TotalRounds = levelRounds.Count;
-                _levelSettings.EnemiesRounds = levelRounds;
-            }
-
-            Debug.Log(_gameSettings.EnemiesSetUpPerLevel.Count);
 
             var jsonContent = JsonUtility.ToJson(_gameSettings);
-            Debug.Log(jsonContent);
             File.WriteAllText(_gameSettingsPath, jsonContent);
             Debug.Log("Game Settings saved. ");
+            AreDataAlreadyLoaded = false;
         }
     }
 }

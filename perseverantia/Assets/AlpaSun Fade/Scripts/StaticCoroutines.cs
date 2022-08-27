@@ -61,7 +61,7 @@ namespace AlpaSunFade
 
 			container.style.opacity = endOpacity;
 			container.SetEnabled(false);
-			settings.sortingOrder = 0;
+			settings.sortingOrder = -1;
 		}
 
 		// Creates a smoother transition by changing the fade speed during the duration of the fade

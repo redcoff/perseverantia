@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 
 public class TargetLocator : MonoBehaviour
@@ -52,7 +53,7 @@ public class TargetLocator : MonoBehaviour
         }
         var targetDistance = Vector3.Distance(transform.position, target.position);
 
-        if (targetDistance < range)
+        if (targetDistance > range)
         {
             StopAttack();
             return;
@@ -60,7 +61,7 @@ public class TargetLocator : MonoBehaviour
 
         if (!isAOE)
         {
-            aim.LookAt(target);
+            aim.DOLookAt(target.position, 1f);
         }
         
         Attack(targetDistance < range);
@@ -84,7 +85,6 @@ public class TargetLocator : MonoBehaviour
     {
         if (!projectileParticles.isPlaying) return;
         
-        var emissionModule = projectileParticles.emission;
         projectileParticles.Stop();
     }
     

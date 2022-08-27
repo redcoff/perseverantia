@@ -4896,7 +4896,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80e093c6a53bcb34bb39ffeb36bea34f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHitPoints: 5
+  maxHitPoints: 20
+  obeliskDamageDealt: 7
+  lampDamageDealt: 3
+  smallLampDamageDealt: 5
 --- !u!65 &3930106015799566760
 BoxCollider:
   m_ObjectHideFlags: 0

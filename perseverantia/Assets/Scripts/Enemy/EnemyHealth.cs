@@ -7,7 +7,12 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
-    [SerializeField] private int maxHitPoints = 5;
+    [SerializeField] private int maxHitPoints = 20;
+    
+    [SerializeField] private int obeliskDamageDealt = 3;
+    [SerializeField] private int lampDamageDealt = 10;
+    [SerializeField] private int smallLampDamageDealt = 5;
+    
     private int _currentHitPoints = 0;
     private Enemy _enemy;
 
@@ -47,15 +52,41 @@ public class EnemyHealth : MonoBehaviour
         _enemy = GetComponent<Enemy>();
     }
 
+    //TODO: dictionary s objektem towery a value jestli muze hitnout
+    private bool canHit = true;
+
     private void OnParticleCollision(GameObject other)
     {
-        Hit();
+        Debug.Log(other.name);
+        if (other.CompareTag("Obelisk"))
+        {
+            Hit(obeliskDamageDealt);
+        }
+        if (other.CompareTag("Lamp"))
+        {
+            if (gameObject.activeSelf && canHit)
+            {
+                canHit = false;
+                StartCoroutine(OnCooldown());
+            }
+        }
+        if (other.CompareTag("SmallLamp"))
+        {
+            Hit(smallLampDamageDealt);
+        }
     }
 
-    private void Hit()
+    IEnumerator OnCooldown()
     {
-        Debug.Log("au");
-        _currentHitPoints--;
+        Debug.Log(_currentHitPoints);
+        yield return new WaitForSeconds(1);
+        Hit(lampDamageDealt);
+        canHit = true;
+    }
+
+    private void Hit(int damage)
+    {
+        _currentHitPoints -= damage;
         if (_currentHitPoints <= 0)
         {
             _enemy.RewardCurrency();

@@ -43,6 +43,9 @@ public class GameUIController : MonoBehaviour
         _happinessValue = _doc.rootVisualElement.Q<Label>("HappinessValue");
         _playRoundButton = _doc.rootVisualElement.Q<Button>("StartRound");
         _roundValue = _doc.rootVisualElement.Q<Label>("CurrentRound");
+
+        _sanityValue.text = string.Concat(_levelSettings.StartingSanity.ToString(), " %");
+        _happinessValue.text = _levelSettings.StartingHappiness.ToString();
         
         _tower1Button = _doc.rootVisualElement.Q<Button>("SmallLamp");
         _tower2Button = _doc.rootVisualElement.Q<Button>("Lamp");

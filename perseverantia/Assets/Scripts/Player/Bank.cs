@@ -5,16 +5,16 @@ using UnityEngine;
 
 public class Bank : MonoBehaviour
 {
-    [SerializeField] private int startingBalance = 150;
-
     private int currentBalance = 0;
     private GameUIController _gameUIController; 
+    private LevelSettings _levelSettings;
         
     public int CurrentBalance => currentBalance;
 
     private void Awake()
     {
-        currentBalance = startingBalance;
+        _levelSettings = FindObjectOfType<LevelSettings>();
+        currentBalance = _levelSettings.StartingHappiness;
         _gameUIController = FindObjectOfType<GameUIController>(); 
     }
 

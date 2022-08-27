@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Path
+  - SmallLamp
+  - Lamp
+  - Obelisk
   layers:
   - Default
   - TransparentFX

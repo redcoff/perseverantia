@@ -63,3 +63,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transitionColor: {r: 0, g: 0, b: 0, a: 0}
   settings: {fileID: 11400000, guid: e93b86d50b0a6ad4fbb107a8c401747a, type: 2}
+  _doc: {fileID: 7128707872838151353}
