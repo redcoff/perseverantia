@@ -11,9 +11,35 @@ public class EnemyHealth : MonoBehaviour
     private int _currentHitPoints = 0;
     private Enemy _enemy;
 
+    private LevelController _levelController;
+
+    private bool _spawned = false;
+    private bool _instanced = false;
+
+    private void Awake()
+    {
+        _levelController = FindObjectOfType<LevelController>();
+        _spawned = false;
+    }
+
     void OnEnable()
     {
+        if (!_instanced)
+        {
+            _instanced = true;
+            return;
+        } 
+        
         _currentHitPoints = maxHitPoints;
+        _spawned = true;
+    }
+
+    private void OnDisable()
+    {
+        if (!_spawned) return;
+        
+        _spawned = false;
+        _levelController.DespawnEnemy();
     }
 
     private void Start()
@@ -34,6 +60,7 @@ public class EnemyHealth : MonoBehaviour
         {
             _enemy.RewardCurrency();
             gameObject.SetActive(false);
+            
         }
     }
 }

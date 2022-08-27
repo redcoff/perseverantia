@@ -15,18 +15,18 @@
                 "m_VisualTreeAssetBackup": {
                     "instanceID": 0
                 },
-                "m_OpenendVisualTreeAssetOldPath": "Assets/Editor/Extension/EnemyLevelWindow.uxml",
+                "m_OpenendVisualTreeAssetOldPath": "Assets/AlpaSun Fade/UI Toolkit/Layouts/TransitionPanel.uxml",
                 "m_VisualTreeAsset": {
                     "fileID": 9197481963319205126,
-                    "guid": "e604e1ff8b3c4c44aaba83d66049ea91",
+                    "guid": "f4e900df74b02a54993c266d2c9b21d1",
                     "type": 3
                 },
                 "m_ActiveStyleSheet": {
                     "instanceID": 0
                 },
                 "m_Settings": {
-                    "UxmlGuid": "e604e1ff8b3c4c44aaba83d66049ea91",
-                    "UxmlPath": "Assets/Editor/Extension/EnemyLevelWindow.uxml",
+                    "UxmlGuid": "f4e900df74b02a54993c266d2c9b21d1",
+                    "UxmlPath": "Assets/AlpaSun Fade/UI Toolkit/Layouts/TransitionPanel.uxml",
                     "CanvasX": 0,
                     "CanvasY": 0,
                     "CanvasWidth": 350,

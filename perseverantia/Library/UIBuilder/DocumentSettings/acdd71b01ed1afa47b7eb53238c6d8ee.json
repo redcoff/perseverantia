@@ -1,0 +1,30 @@
+{
+    "UxmlGuid": "acdd71b01ed1afa47b7eb53238c6d8ee",
+    "UxmlPath": "Assets/UI/Transition.uxml",
+    "CanvasX": 0,
+    "CanvasY": 0,
+    "CanvasWidth": 687,
+    "CanvasHeight": 386,
+    "MatchGameView": true,
+    "ZoomScale": 1.25,
+    "PanOffset": {
+        "x": 167.148681640625,
+        "y": 156.64874267578126
+    },
+    "ColorModeBackgroundOpacity": 1.0,
+    "ImageModeCanvasBackgroundOpacity": 1.0,
+    "CameraModeCanvasBackgroundOpacity": 1.0,
+    "EnableCanvasBackground": true,
+    "CanvasBackgroundMode": 2,
+    "CanvasBackgroundColor": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 255.0
+    },
+    "CanvasBackgroundImage": {
+        "instanceID": 0
+    },
+    "CanvasBackgroundImageScaleMode": 1,
+    "CanvasBackgroundCameraName": "Main Camera"
+}

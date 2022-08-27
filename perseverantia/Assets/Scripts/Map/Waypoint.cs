@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class Waypoint : MonoBehaviour
 {
-    [SerializeField] private Tower tower;
+    public Tower tower;
 
     [SerializeField] private bool isPlaceable;
     public bool IsPlaceable => isPlaceable;

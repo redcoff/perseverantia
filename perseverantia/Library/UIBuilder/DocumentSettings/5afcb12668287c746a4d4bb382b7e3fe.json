@@ -3,13 +3,13 @@
     "UxmlPath": "Assets/UI/Styles/SettingsTemplate.uxml",
     "CanvasX": 0,
     "CanvasY": 0,
-    "CanvasWidth": 350,
+    "CanvasWidth": 889,
     "CanvasHeight": 450,
     "MatchGameView": false,
-    "ZoomScale": 1.0,
+    "ZoomScale": 1.25,
     "PanOffset": {
-        "x": 20.0,
-        "y": 20.0
+        "x": 97.32101440429688,
+        "y": 231.98492431640626
     },
     "ColorModeBackgroundOpacity": 1.0,
     "ImageModeCanvasBackgroundOpacity": 1.0,

@@ -1,15 +1,15 @@
 {
     "UxmlGuid": "4cc3280bc34e86941bc6c3fe3c09b501",
-    "UxmlPath": "Assets/UI/Menu.uxml",
+    "UxmlPath": "Assets/UI/Menu/Menu.uxml",
     "CanvasX": 0,
     "CanvasY": 0,
-    "CanvasWidth": 705,
-    "CanvasHeight": 397,
-    "MatchGameView": true,
-    "ZoomScale": 1.25,
+    "CanvasWidth": 1920,
+    "CanvasHeight": 1080,
+    "MatchGameView": false,
+    "ZoomScale": 0.5,
     "PanOffset": {
-        "x": 121.461181640625,
-        "y": 251.30950927734376
+        "x": 184.6177978515625,
+        "y": 88.7237548828125
     },
     "ColorModeBackgroundOpacity": 1.0,
     "ImageModeCanvasBackgroundOpacity": 1.0,

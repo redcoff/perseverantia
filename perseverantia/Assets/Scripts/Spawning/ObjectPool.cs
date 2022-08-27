@@ -12,27 +12,53 @@ public class ObjectPool : MonoBehaviour
 
     public int MaximumSpawns = 10;
 
-    private float currentSpawned = 0f;
+    private int currentSpawned = 0;
+    private int currentDespawned = 0;
     private GameObject[] pool;
+    
+    private LevelController _levelController;
+    private LevelSettings _levelSettings;
 
-    UnityEvent EndEvent;
+    //UnityEvent EndEvent;
+
+    private void Awake()
+    {
+         _levelController = FindObjectOfType<LevelController>();
+         _levelSettings = FindObjectOfType<LevelSettings>();
+    }
 
     void Start()
     {
-        if (EndEvent == null)
+        /*if (EndEvent == null)
             EndEvent = new UnityEvent();
 
-        EndEvent.AddListener(Finish);
+        EndEvent.AddListener(Finish);*/
+    }
+
+    public void AddDespawned()
+    {
+        Debug.Log("Despawned: " + currentDespawned);
+        currentDespawned++;
+
+        if (currentDespawned != 0 && currentSpawned != 0 && currentDespawned == currentSpawned)
+        {
+            Finish();
+        }
     }
 
     public void Run()
     {
+        ResetRound();
         FillPool();
         StartCoroutine(SpawnObject());
     }
 
     void FillPool()
     {
+        MaximumSpawns = _levelSettings.EnemiesRounds[_levelController.CurrentRound];
+        
+        Debug.Log($"Current num of enemies: {MaximumSpawns.ToString()}");
+        
         pool = new GameObject[MaximumSpawns];
 
         for (var i = 0; i < pool.Length; i++)
@@ -65,9 +91,16 @@ public class ObjectPool : MonoBehaviour
         }
     }
 
+    private void ResetRound()
+    {
+        currentDespawned = 0;
+        currentSpawned = 0;
+    }
+
     private void Finish()
     {
-        
+        Debug.Log("Round finished.");
+        _levelController.FinishRound();
     }
 
 }

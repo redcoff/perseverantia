@@ -1,5 +1,38 @@
 .game-label {
-    color: rgba(255, 255, 255, 255);
+    color: rgb(255, 255, 255);
     -unity-text-align: upper-left;
     margin-top: 0.2%;
+    font-size: 60%;
+    -unity-font-definition: url('project://database/Assets/_External/Fonts/Major_Mono_Display/MajorMonoDisplay-Regular%20SDF.asset?fileID=11400000&guid=ec2d9593989989d4581521ccc4086146&type=2#MajorMonoDisplay-Regular SDF');
+}
+
+.game-button-shop {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 0;
+    width: auto;
+    max-width: none;
+    min-width: 120px;
+    background-color: rgba(0, 0, 0, 0);
+    min-height: 120px;
+    border-left-color: rgba(255, 255, 255, 255);
+    border-right-color: rgba(255, 255, 255, 255);
+    border-top-color: rgba(255, 255, 255, 255);
+    border-bottom-color: rgba(255, 255, 255, 255);
+    border-left-width: 0.01px;
+    border-right-width: 0.01px;
+    border-top-width: 0.01px;
+    border-bottom-width: 0.01px;
+}
+
+.game-butt-label {
+    font-size: 37px;
+    -unity-text-align: lower-center;
+    -unity-font: url('project://database/Assets/_External/Fonts/Major_Mono_Display/MajorMonoDisplay-Regular.ttf?fileID=12800000&guid=cdbc3aeec993f75428712f7dad715f1f&type=3#MajorMonoDisplay-Regular');
+    -unity-font-definition: url('project://database/Assets/_External/Fonts/Major_Mono_Display/MajorMonoDisplay-Regular%20SDF.asset?fileID=11400000&guid=ec2d9593989989d4581521ccc4086146&type=2#MajorMonoDisplay-Regular SDF');
+    background-color: rgba(0, 0, 0, 0.61);
+    color: rgba(255, 255, 255, 255);
+    -unity-text-outline-width: 0.1px;
 }

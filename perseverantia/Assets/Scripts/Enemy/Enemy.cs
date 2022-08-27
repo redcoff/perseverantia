@@ -34,5 +34,6 @@ public class Enemy : MonoBehaviour
     {
         _playerSanity.TakeSanity(penalty);
     }
+    
 
 }

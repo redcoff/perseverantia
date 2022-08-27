@@ -1,5 +1,6 @@
 Library\Bee\artifacts\mvdfrm\Unity.PlasticSCM.Editor.ref.dll_257AEB342BE77856.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.Services.Core.Editor.ref.dll_CCD0CF61C5D7A10A.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Settings.Editor.ref.dll_7F5B154C05A780B0.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEditor.TestRunner.ref.dll_193EC4CE382CBFB3.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEditor.UI.ref.dll_4C98D3F7040CD4F5.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEngine.TestRunner.ref.dll_E55D0F7C63F01D9E.mvfrm
@@ -87,11 +88,12 @@ Library\Bee\artifacts\mvdfrm\UnityEngine.VirtualTexturingModule.dll_57D26059DF92
 Library\Bee\artifacts\mvdfrm\UnityEngine.VRModule.dll_3CB00BEA1C6EF4F8.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEngine.WindModule.dll_7B4109E065E5F514.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEngine.XRModule.dll_6F6ECEEEA5A94256.mvfrm
+Library\Bee\artifacts\mvdfrm\UnityEditor.WebGL.Extensions.dll_3EA59CE5F014AB30.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEditor.WindowsStandalone.Extensions.dll_714778D914419E20.mvfrm
-Library\Bee\artifacts\mvdfrm\Unity.Burst.Cecil.dll_3EC1940D242F267A.mvfrm
-Library\Bee\artifacts\mvdfrm\Unity.Burst.Cecil.Mdb.dll_9132041D1F933837.mvfrm
-Library\Bee\artifacts\mvdfrm\Unity.Burst.Cecil.Pdb.dll_A8847C8C9E4839BA.mvfrm
-Library\Bee\artifacts\mvdfrm\Unity.Burst.Cecil.Rocks.dll_D5722BFB87A2951A.mvfrm
-Library\Bee\artifacts\mvdfrm\Unity.Burst.Unsafe.dll_17AF2ADAC1E11FF9.mvfrm
-Library\Bee\artifacts\mvdfrm\Unity.Plastic.Antlr3.Runtime.dll_70B12E82B623DDBC.mvfrm
-Library\Bee\artifacts\mvdfrm\Unity.Plastic.Newtonsoft.Json.dll_90EDE4A5F6B275B9.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Burst.Cecil.dll_84377BEEA8F2BD01.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Burst.Cecil.Mdb.dll_9032E41E1AFEB87E.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Burst.Cecil.Pdb.dll_A7855C8D99B3BA01.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Burst.Cecil.Rocks.dll_1BC166F91D6EF441.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Burst.Unsafe.dll_CEF3DE73FB91FE42.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Plastic.Antlr3.Runtime.dll_A7351566B17B23E3.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Plastic.Newtonsoft.Json.dll_E016A2D3B94BEDA2.mvfrm

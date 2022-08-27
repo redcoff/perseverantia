@@ -1,18 +1,44 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI/Game/Styles/GameStyles.uss?fileID=7433441132597879392&amp;guid=b0d82a00bbca10145a57f8f3d341c768&amp;type=3#GameStyles" />
-    <ui:VisualElement name="PlayerInfo" style="flex-direction: column; margin-left: 2%; margin-top: 2%;">
-        <ui:VisualElement name="SanityContainer" style="white-space: nowrap; flex-direction: row;">
-            <ui:Label text="Sanity:" display-tooltip-when-elided="true" name="SanityName" class="game-label" style="margin-right: 0;" />
-            <ui:Label text="100%" display-tooltip-when-elided="true" name="SanityValue" class="game-label" />
+    <ui:VisualElement style="flex-direction: row;">
+        <ui:VisualElement name="PlayerInfo" style="flex-direction: column; margin-left: 2%; margin-top: 2%; font-size: 100%;">
+            <ui:VisualElement name="SanityContainer" style="white-space: nowrap; flex-direction: row; width: auto; height: auto; font-size: 100%;">
+                <ui:Label text="sanity:" display-tooltip-when-elided="true" name="SanityName" class="game-label" />
+                <ui:Label text="100%" display-tooltip-when-elided="true" name="SanityValue" class="game-label" />
+            </ui:VisualElement>
+            <ui:VisualElement name="HappinessContainer" style="white-space: nowrap; flex-direction: row;">
+                <ui:Label text="Happiness:" display-tooltip-when-elided="true" name="HappinessName" class="game-label" />
+                <ui:Label text="12" display-tooltip-when-elided="true" name="HappinessValue" class="game-label" />
+            </ui:VisualElement>
         </ui:VisualElement>
-        <ui:VisualElement name="HappinessContainer" style="white-space: nowrap; flex-direction: row;">
-            <ui:Label text="Happiness:" display-tooltip-when-elided="true" name="HappinessName" class="game-label" />
-            <ui:Label text="12" display-tooltip-when-elided="true" name="HappinessValue" class="game-label" />
+        <ui:VisualElement style="flex-grow: 1;">
+            <ui:VisualElement name="Towers" style="justify-content: center; min-width: auto; min-height: auto; bottom: auto; top: auto; flex-direction: column; max-width: none; font-size: 0; flex-grow: 0; right: 0; left: 0; flex-wrap: wrap; flex-shrink: 1; align-items: flex-end; flex-basis: auto; margin-right: 5%; margin-top: 10px;">
+                <ui:VisualElement>
+                    <ui:Button display-tooltip-when-elided="true" name="SmallLamp" class="game-button-shop" style="background-image: url(&apos;project://database/Assets/Pictures/lampicka%201.png?fileID=2800000&amp;guid=a708cbf8236a65848a25df62ddf9c430&amp;type=3#lampicka 1&apos;); background-color: rgba(88, 88, 88, 0); font-size: 0; -unity-text-align: lower-center;">
+                        <ui:Label text="75" display-tooltip-when-elided="true" name="SmallLampPrice" class="game-butt-label" />
+                    </ui:Button>
+                </ui:VisualElement>
+                <ui:VisualElement>
+                    <ui:Button display-tooltip-when-elided="true" name="Lamp" class="game-button-shop" style="background-image: url(&apos;project://database/Assets/Pictures/lampa%201.png?fileID=2800000&amp;guid=e4accc01e8cdcb14d834284e839f0055&amp;type=3#lampa 1&apos;);">
+                        <ui:Label text="100" display-tooltip-when-elided="true" name="LampPrice" class="game-butt-label" style="font-size: 37px; -unity-text-align: lower-center; -unity-font: url(&apos;project://database/Assets/TextMesh%20Pro/Fonts/LiberationSans.ttf?fileID=12800000&amp;guid=e3265ab4bf004d28a9537516768c1c75&amp;type=3#LiberationSans&apos;); -unity-font-definition: url(&apos;project://database/Assets/_External/Fonts/Major_Mono_Display/MajorMonoDisplay-Regular%20SDF.asset?fileID=11400000&amp;guid=ec2d9593989989d4581521ccc4086146&amp;type=2#MajorMonoDisplay-Regular SDF&apos;);" />
+                    </ui:Button>
+                </ui:VisualElement>
+                <ui:VisualElement>
+                    <ui:Button display-tooltip-when-elided="true" name="Obelisk" class="game-button-shop" style="background-image: url(&apos;project://database/Assets/Pictures/obelisk.png?fileID=2800000&amp;guid=b7bf70a57f2e5ff478a65c0120a0bb9b&amp;type=3#obelisk&apos;);">
+                        <ui:Label text="100" display-tooltip-when-elided="true" name="ObeliskPrice" class="game-butt-label" style="font-size: 37px; -unity-text-align: lower-center; -unity-font: url(&apos;project://database/Assets/TextMesh%20Pro/Fonts/LiberationSans.ttf?fileID=12800000&amp;guid=e3265ab4bf004d28a9537516768c1c75&amp;type=3#LiberationSans&apos;); -unity-font-definition: url(&apos;project://database/Assets/_External/Fonts/Major_Mono_Display/MajorMonoDisplay-Regular%20SDF.asset?fileID=11400000&amp;guid=ec2d9593989989d4581521ccc4086146&amp;type=2#MajorMonoDisplay-Regular SDF&apos;);" />
+                    </ui:Button>
+                </ui:VisualElement>
+            </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>
-    <ui:VisualElement name="Towers" style="justify-content: center; min-width: auto; min-height: auto; bottom: auto; top: 82%; flex-direction: row;">
-        <ui:Button text="1" display-tooltip-when-elided="true" name="SmallLamp" style="width: 5%;" />
-        <ui:Button text="2" display-tooltip-when-elided="true" name="Lamp" style="width: 5%;" />
-        <ui:Button text="3" display-tooltip-when-elided="true" name="Obelisk" style="width: 5%;" />
+    <ui:VisualElement name="GameController" style="flex-grow: 1; flex-direction: row; top: auto; justify-content: flex-start; align-items: flex-end;">
+        <ui:VisualElement style="margin-top: 0; margin-left: 2%; margin-bottom: 2%;">
+            <ui:Label text="Round 1/20" display-tooltip-when-elided="true" name="CurrentRound" class="game-label" style="-unity-font-definition: url(&apos;project://database/Assets/_External/Fonts/Major_Mono_Display/MajorMonoDisplay-Regular%20SDF.asset?fileID=11400000&amp;guid=ec2d9593989989d4581521ccc4086146&amp;type=2#MajorMonoDisplay-Regular SDF&apos;); font-size: 60%;" />
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 1;">
+            <ui:VisualElement name="GameButtons" style="justify-content: flex-end; align-items: flex-end; margin-right: 4%; margin-bottom: 10px; border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); background-color: rgba(0, 0, 0, 0);">
+                <ui:Button text="Run" display-tooltip-when-elided="true" name="StartRound" style="align-items: flex-end; -unity-font-definition: url(&apos;project://database/Assets/_External/Fonts/Major_Mono_Display/MajorMonoDisplay-Regular%20SDF.asset?fileID=11400000&amp;guid=ec2d9593989989d4581521ccc4086146&amp;type=2#MajorMonoDisplay-Regular SDF&apos;); font-size: 100%; background-color: rgba(88, 88, 88, 0); border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); -unity-font-style: bold; color: rgba(255, 255, 255, 255);" />
+            </ui:VisualElement>
+        </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
