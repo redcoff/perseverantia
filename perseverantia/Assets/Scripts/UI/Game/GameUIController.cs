@@ -1,5 +1,7 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 using UnityEngine.UIElements;
 
 public class GameUIController : MonoBehaviour
@@ -7,6 +9,7 @@ public class GameUIController : MonoBehaviour
     [SerializeField] private Tower Tower1;
     [SerializeField] private Tower Tower2;
     [SerializeField] private Tower Tower3;
+    [SerializeField] private GameObject PauseMenu;
     
     private LevelController _levelController;
     private LevelSettings _levelSettings;
@@ -26,8 +29,6 @@ public class GameUIController : MonoBehaviour
     private Label _tower2Price;
     private Label _tower3Price;
 
-    [SerializeField] private GameObject gameOverObject;
-    
     private Waypoint[] _waypoints;
 
     private void Awake()
@@ -64,6 +65,17 @@ public class GameUIController : MonoBehaviour
         _tower3Button.clicked += SetTower3;
     }
 
+    private bool _isPauseMenuShown = false;
+
+    public void Update()
+    {
+        if (Input.GetKeyDown("escape"))
+        {
+            PauseMenu.SetActive(!_isPauseMenuShown);
+            _isPauseMenuShown = !_isPauseMenuShown;
+        }
+    }
+
     public void UpdateSanity(int sanityValue)
     {
         _sanityValue.text = string.Concat(sanityValue.ToString(), " %");
@@ -77,11 +89,6 @@ public class GameUIController : MonoBehaviour
     public void UpdateRound(int currentRoundValue, int maxRoundValue)
     {
         _roundValue.text = string.Concat("Round " , currentRoundValue.ToString(), "/", maxRoundValue.ToString());
-    }
-
-    public void GameOver()
-    {
-        gameOverObject.SetActive(true);
     }
     
     private void RunRound()

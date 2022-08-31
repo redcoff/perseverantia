@@ -11,37 +11,51 @@
         "m_CodePreviewVisible": true,
         "m_OpenUXMLFiles": [
             {
-                "m_OpenUSSFiles": [],
+                "m_OpenUSSFiles": [
+                    {
+                        "m_StyleSheet": {
+                            "fileID": 7433441132597879392,
+                            "guid": "78a82b86e6620e14d939633284f21fb4",
+                            "type": 3
+                        },
+                        "m_BackupStyleSheet": {
+                            "instanceID": 0
+                        },
+                        "m_OldPath": "Assets/UI/Styles/MenuStyles.uss"
+                    }
+                ],
                 "m_VisualTreeAssetBackup": {
                     "instanceID": 0
                 },
-                "m_OpenendVisualTreeAssetOldPath": "Assets/AlpaSun Fade/UI Toolkit/Layouts/TransitionPanel.uxml",
+                "m_OpenendVisualTreeAssetOldPath": "Assets/UI/Game/Pause.uxml",
                 "m_VisualTreeAsset": {
                     "fileID": 9197481963319205126,
-                    "guid": "f4e900df74b02a54993c266d2c9b21d1",
+                    "guid": "0395574e755606d40b88e6065746956f",
                     "type": 3
                 },
                 "m_ActiveStyleSheet": {
-                    "instanceID": 0
+                    "fileID": 7433441132597879392,
+                    "guid": "78a82b86e6620e14d939633284f21fb4",
+                    "type": 3
                 },
                 "m_Settings": {
-                    "UxmlGuid": "f4e900df74b02a54993c266d2c9b21d1",
-                    "UxmlPath": "Assets/AlpaSun Fade/UI Toolkit/Layouts/TransitionPanel.uxml",
+                    "UxmlGuid": "0395574e755606d40b88e6065746956f",
+                    "UxmlPath": "Assets/UI/Game/Pause.uxml",
                     "CanvasX": 0,
                     "CanvasY": 0,
-                    "CanvasWidth": 350,
-                    "CanvasHeight": 450,
-                    "MatchGameView": false,
-                    "ZoomScale": 1.0,
+                    "CanvasWidth": 582,
+                    "CanvasHeight": 327,
+                    "MatchGameView": true,
+                    "ZoomScale": 0.5,
                     "PanOffset": {
-                        "x": 20.0,
-                        "y": 20.0
+                        "x": 659.2916259765625,
+                        "y": 421.12493896484377
                     },
                     "ColorModeBackgroundOpacity": 1.0,
                     "ImageModeCanvasBackgroundOpacity": 1.0,
                     "CameraModeCanvasBackgroundOpacity": 1.0,
-                    "EnableCanvasBackground": false,
-                    "CanvasBackgroundMode": 0,
+                    "EnableCanvasBackground": true,
+                    "CanvasBackgroundMode": 2,
                     "CanvasBackgroundColor": {
                         "r": 0.0,
                         "g": 0.0,
@@ -52,7 +66,7 @@
                         "instanceID": 0
                     },
                     "CanvasBackgroundImageScaleMode": 1,
-                    "CanvasBackgroundCameraName": ""
+                    "CanvasBackgroundCameraName": "Main Camera"
                 },
                 "m_OpenSubDocumentParentIndex": -1,
                 "m_OpenSubDocumentParentSourceTemplateAssetIndex": -1

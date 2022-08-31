@@ -1,7 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using JetBrains.Annotations;
 using UnityEngine;
 using TMPro;
 
@@ -46,8 +42,8 @@ public class CoordLabel : MonoBehaviour
 
     void DisplayCoordinates()
     {
-        _coordinates.x = Mathf.RoundToInt(transform.parent.position.x / UnityEditor.EditorSnapSettings.move.x);
-        _coordinates.y = Mathf.RoundToInt(transform.parent.position.z / UnityEditor.EditorSnapSettings.move.z);
+        _coordinates.x = Mathf.RoundToInt(transform.parent.position.x / 4);
+        _coordinates.y = Mathf.RoundToInt(transform.parent.position.z / 4);
         
         _label.text = $"[{_coordinates.x.ToString()}, {_coordinates.y.ToString()}]";
     }

@@ -1,0 +1,4 @@
+#Wed Aug 31 22:31:24 CEST 2022
+base.0=W\:\\School\\ncgd008\\final\\perseverantia\\perseverantia\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

@@ -8,7 +8,8 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField] private int currencyReward = 20;
     [SerializeField] private int penalty = 5;
-
+    
+    private LevelController _levelController;
     private Bank _bank;
     private Sanity _playerSanity;
     
@@ -17,6 +18,8 @@ public class Enemy : MonoBehaviour
     {
         _bank = FindObjectOfType<Bank>();    
         _playerSanity = FindObjectOfType<Sanity>();    
+        _levelController = FindObjectOfType<LevelController>();
+        currencyReward += (_levelController.CurrentRound * 10);
     }
 
     public void RewardCurrency()

@@ -25,6 +25,9 @@ public class EnemyHealth : MonoBehaviour
     {
         _levelController = FindObjectOfType<LevelController>();
         _spawned = false;
+        towersAoECanHit = new Dictionary<GameObject, bool>();
+
+        maxHitPoints += _levelController.CurrentRound * 5;
     }
 
     void OnEnable()
@@ -51,23 +54,31 @@ public class EnemyHealth : MonoBehaviour
     {
         _enemy = GetComponent<Enemy>();
     }
-
-    //TODO: dictionary s objektem towery a value jestli muze hitnout
-    private bool canHit = true;
+    
+    private Dictionary<GameObject, bool> towersAoECanHit;
 
     private void OnParticleCollision(GameObject other)
     {
-        Debug.Log(other.name);
         if (other.CompareTag("Obelisk"))
         {
             Hit(obeliskDamageDealt);
         }
         if (other.CompareTag("Lamp"))
         {
+            var canHit = true;
+            if (towersAoECanHit.ContainsKey(other))
+            {
+                towersAoECanHit.TryGetValue(other, out canHit);
+            }
+            else
+            {
+                towersAoECanHit.TryAdd(other, true);
+            }
+
             if (gameObject.activeSelf && canHit)
             {
-                canHit = false;
-                StartCoroutine(OnCooldown());
+                towersAoECanHit[other] = false;
+                StartCoroutine(OnCooldown(other));
             }
         }
         if (other.CompareTag("SmallLamp"))
@@ -76,12 +87,12 @@ public class EnemyHealth : MonoBehaviour
         }
     }
 
-    IEnumerator OnCooldown()
+    IEnumerator OnCooldown(GameObject other)
     {
         Debug.Log(_currentHitPoints);
         yield return new WaitForSeconds(1);
         Hit(lampDamageDealt);
-        canHit = true;
+        towersAoECanHit[other] = true;
     }
 
     private void Hit(int damage)

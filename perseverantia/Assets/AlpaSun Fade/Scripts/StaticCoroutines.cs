@@ -1,6 +1,5 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
 
 namespace AlpaSunFade
@@ -10,25 +9,6 @@ namespace AlpaSunFade
 	/// </summary>
 	internal static class StaticCoroutines
 	{
-		/// <summary>
-		/// Locks the controls by setting the control map to one that doesn't handle any input. Once the coroutine is complete,
-		/// the controls will be set back to their original map.
-		/// </summary>
-		/// <param name="duration">Duration in seconds to lock the controls. Should be the same or slightly longer then the
-		/// fade duration</param>
-		/// <param name="playerInput">PlayerInput object used to set the map</param>
-		/// <returns></returns>
-		internal static IEnumerator LockControls(float duration, PlayerInput playerInput)
-		{
-			var actionMapStart = playerInput.currentActionMap;
-			playerInput.currentActionMap = playerInput.actions.FindActionMap(nameOrId: "LockControls");
-
-			yield return new WaitForSeconds(duration);
-
-			playerInput.currentActionMap = actionMapStart;
-
-			yield return null;
-		}
 
 		/// <summary>
 		/// Handles the opacity of the visual element to control the fade

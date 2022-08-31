@@ -1,7 +1,11 @@
-.endGameButton {
+.endGameButton:hover {
+    color: rgb(255, 255, 255);
+    -unity-background-image-tint-color: rgb(0, 0, 0);
 }
 
-.endGameButton:hover {
-    color: rgba(255, 255, 255, 255);
-    -unity-background-image-tint-color: rgba(0, 0, 0, 255);
+.endGameButton {
+    font-size: 260%;
+    -unity-font-definition: url('project://database/Assets/_External/Fonts/Major_Mono_Display/MajorMonoDisplay-Regular%20SDF.asset?fileID=11400000&guid=ec2d9593989989d4581521ccc4086146&type=2#MajorMonoDisplay-Regular SDF');
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0);
 }

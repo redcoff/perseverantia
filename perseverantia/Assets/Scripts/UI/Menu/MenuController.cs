@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using AlpaSunFade;
 using UnityEngine;
@@ -30,8 +31,8 @@ public class MenuController : MonoBehaviour
 
     private void Awake()
     {
+        SetDefaultPlayerScore();
         _music.DOFade(AudioListener.volume, 2);
-        _transitionPanel.StartTransition(false, 1, 1);
         _doc = GetComponent<UIDocument>();
         _playButton = _doc.rootVisualElement.Q<Button>("PlayButton");
         _settingsButton = _doc.rootVisualElement.Q<Button>("SettingsButton");
@@ -56,7 +57,19 @@ public class MenuController : MonoBehaviour
             AudioListener.volume = v.newValue / 100;
         });
     }
-    
+
+    private void Start()
+    {
+        _transitionPanel.StartTransition(false, 1, 1);
+    }
+
+    private void SetDefaultPlayerScore()
+    {
+        PlayerPrefs.SetInt("TotalRounds", 0);
+        PlayerPrefs.SetInt("HappinessLeft", 0);
+        PlayerPrefs.SetInt("CurrentLevelIndex", 0);
+        PlayerPrefs.SetInt("IsWin", 0);
+    }
 
     private void PlayButtonOnClicked()
     {

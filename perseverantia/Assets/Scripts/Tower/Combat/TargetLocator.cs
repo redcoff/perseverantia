@@ -11,6 +11,8 @@ public class TargetLocator : MonoBehaviour
     [SerializeField] private ParticleSystem projectileParticles;
     [SerializeField] private float range = 15;
     [SerializeField] private bool isAOE = false;
+
+    public float Range => range;
     
 
     private bool onCooldown = false;
@@ -18,26 +20,28 @@ public class TargetLocator : MonoBehaviour
     
     void Update()
     {
-        FindClosestTarget();
+        FindTarget();
         Aim();
     }
     
 
-    void FindClosestTarget()
+    void FindTarget()
     {
         var enemies = FindObjectsOfType<Enemy>();
         
         Transform closest = null;
-        float maxDistance = Mathf.Infinity;
+        var maxDistance = range;
+        var minPathIndex = Mathf.NegativeInfinity;
 
         foreach (var enemy in enemies)
         {
             float targetDistance = Vector3.Distance(transform.position, enemy.transform.position);
+            var targetPathIndex = enemy.GetComponent<EnemyMovement>().CurrentPathIndex;
 
-            if (targetDistance < maxDistance)
+            if (targetDistance < maxDistance && targetPathIndex > minPathIndex)
             {
                 closest = enemy.transform;
-                maxDistance = targetDistance;
+                minPathIndex = targetPathIndex;
             }
         }
 
@@ -64,21 +68,14 @@ public class TargetLocator : MonoBehaviour
             aim.DOLookAt(target.position, 1f);
         }
         
-        Attack(targetDistance < range);
+        Attack();
     }
 
-    void Attack(bool isActive)
+    void Attack()
     {
         if (projectileParticles.isPlaying) return;
-        
-        //var emissionModule = projectileParticles.emission;
-        //emissionModule.enabled = isActive;
-        
-        //Debug.Log(emissionModule.enabled.ToString());
-        
-        projectileParticles.Play();
 
-        //StartCoroutine(CooldownCoruntine());
+        projectileParticles.Play();
     }
 
     void StopAttack()

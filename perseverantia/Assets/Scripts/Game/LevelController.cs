@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using AlpaSunFade;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using Scene = UnityEditor.SearchService.Scene;
 
 public class LevelController : MonoBehaviour
 {
@@ -15,12 +14,20 @@ public class LevelController : MonoBehaviour
     private ObjectPool _objectPool;
     private GameUIController _gameUIController;
     [SerializeField] private TransitionPanel _transitionPanel;
+    
+    private Bank _happiness;
+
+    public Tower CurrentSelectedTower;
 
     private void Awake()
     {
         _levelSettings = FindObjectOfType<LevelSettings>();
         _objectPool = FindObjectOfType<ObjectPool>();
         _gameUIController = FindObjectOfType<GameUIController>();
+        _happiness = FindObjectOfType<Bank>();
+        
+        SavePlayerScoreLevelStarted();
+        CurrentSelectedTower = null;
     }
     
     
@@ -43,30 +50,56 @@ public class LevelController : MonoBehaviour
         RunBreak();
     }
 
+    public void GameOver()
+    {
+        SetCurrentPlayerScore(false);
+        _transitionPanel.StartTransition(true, 0, 2);
+        StartCoroutine(Waiter(true));
+    }
+
     private void EndLevel()
     {
         var currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         var totalScenesCount = SceneManager.sceneCountInBuildSettings;
-        
-        Debug.Log(currentSceneIndex);
-        Debug.Log(totalScenesCount);
-        
-        if (currentSceneIndex == totalScenesCount)
+
+        if (currentSceneIndex == totalScenesCount - 2)
         {
-            //konec hry
-            Debug.Log("Endgame");
+            SetCurrentPlayerScore(true);
+            _transitionPanel.StartTransition(true, 0, 2);
+            StartCoroutine(Waiter());
         }
         else
         {
+            SetCurrentPlayerScore(false);
             _transitionPanel.StartTransition(true, 0, 2);
             StartCoroutine(Waiter());
         }
     }
-    
-    IEnumerator Waiter()
+
+    IEnumerator Waiter(bool isGameOver = false)
     {
         yield return new WaitForSeconds(2);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(isGameOver ? SceneManager.sceneCountInBuildSettings - 1 : SceneManager.GetActiveScene().buildIndex + 1);
+    }
+    
+    private void SavePlayerScoreLevelStarted()
+    {
+        var totalRounds = PlayerPrefs.GetInt("TotalRounds", 0);
+        var happinessLeft = PlayerPrefs.GetInt("HappinessLeft", 0);
+        
+        PlayerPrefs.SetInt("PreviousTotalRounds", totalRounds);
+        PlayerPrefs.SetInt("PreviousHappinessLeft", happinessLeft);
+    }
+    
+    private void SetCurrentPlayerScore(bool isWin)
+    {
+        var totalRounds = PlayerPrefs.GetInt("TotalRounds", 0);
+        var happinessLeft = PlayerPrefs.GetInt("HappinessLeft", 0);
+
+        PlayerPrefs.SetInt("TotalRounds", totalRounds + CurrentRound);
+        PlayerPrefs.SetInt("HappinessLeft", happinessLeft + _happiness.CurrentBalance);
+        PlayerPrefs.SetInt("CurrentLevelIndex", SceneManager.GetActiveScene().buildIndex);
+        PlayerPrefs.SetInt("IsWin", isWin ? 1 : 0);
     }
 
     void Start()

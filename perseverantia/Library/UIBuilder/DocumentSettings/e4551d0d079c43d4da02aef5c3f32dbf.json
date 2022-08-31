@@ -3,13 +3,13 @@
     "UxmlPath": "Assets/UI/Game/GameOver.uxml",
     "CanvasX": 0,
     "CanvasY": 0,
-    "CanvasWidth": 544,
-    "CanvasHeight": 306,
+    "CanvasWidth": 916,
+    "CanvasHeight": 515,
     "MatchGameView": true,
-    "ZoomScale": 1.75,
+    "ZoomScale": 0.75,
     "PanOffset": {
-        "x": 134.69989013671876,
-        "y": 203.199951171875
+        "x": 136.8641357421875,
+        "y": 364.3853759765625
     },
     "ColorModeBackgroundOpacity": 1.0,
     "ImageModeCanvasBackgroundOpacity": 1.0,

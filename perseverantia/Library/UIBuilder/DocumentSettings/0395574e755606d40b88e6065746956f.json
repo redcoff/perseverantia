@@ -1,0 +1,30 @@
+{
+    "UxmlGuid": "0395574e755606d40b88e6065746956f",
+    "UxmlPath": "Assets/UI/Game/Pause.uxml",
+    "CanvasX": 0,
+    "CanvasY": 0,
+    "CanvasWidth": 582,
+    "CanvasHeight": 327,
+    "MatchGameView": true,
+    "ZoomScale": 0.5,
+    "PanOffset": {
+        "x": 659.2916259765625,
+        "y": 421.12493896484377
+    },
+    "ColorModeBackgroundOpacity": 1.0,
+    "ImageModeCanvasBackgroundOpacity": 1.0,
+    "CameraModeCanvasBackgroundOpacity": 1.0,
+    "EnableCanvasBackground": true,
+    "CanvasBackgroundMode": 2,
+    "CanvasBackgroundColor": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 255.0
+    },
+    "CanvasBackgroundImage": {
+        "instanceID": 0
+    },
+    "CanvasBackgroundImageScaleMode": 1,
+    "CanvasBackgroundCameraName": "Main Camera"
+}

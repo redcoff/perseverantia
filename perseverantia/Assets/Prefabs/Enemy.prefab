@@ -4897,7 +4897,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHitPoints: 20
-  obeliskDamageDealt: 7
+  obeliskDamageDealt: 10
   lampDamageDealt: 3
   smallLampDamageDealt: 5
 --- !u!65 &3930106015799566760
